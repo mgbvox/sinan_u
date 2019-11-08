@@ -1,0 +1,163 @@
+What is an Operating System?
+
+    - A suite of software that allows for managment of hardware
+        - CPU
+        - RAM
+        - HDD
+        - Internet
+        - Keybaord
+        - etc
+    - We ask the OS for memory to run our program and the OS does the talking to hardware. 
+    - We ask for information to be sent to Google over our NIC, the OS will take our stream of data and send it over network. 
+    - We talk to the operating system, and the operating system talks to the hardware, hardware talks to the OS and then the OS talks back to us. 
+    - The OS creates this level playing field for our software. Now our software can run on all types of hardware, we just need to make sure our software can run on the OS and the hardware talk is the OS's problem. 
+    
+All the different versions of Linux combine the linux kernal (the bare bones OS needed to run a machine) and some userland software (ie. software over and above the kernal that adds functionality to the machine) (eg. email applications, browsers, desktop window manager (of which there are tons: 42 best window managers*))
+
+
+Proper Motiviation
+
+
+What is Bash and why we will be using it?
+
+    Bash is the shell, or interpreter on many Linux distributions that takes human commands and turns them into computer commands.
+    The shell is the program that understands and executes the commands a user enters. After stone tablets and punch cards but before windowed applications, users of computers need to command a computer to do something via typing instructions and pressing "enter". This is still a very powerful way to control a computer. The text entered into a shell prompt are commands and information/arguments for those commands.
+    
+- https://www.gnu.org/software/bash/manual/bash.pdf
+
+- We will be using Bash 4.4
+
+- To start Bash, you will open a terminal emulator 
+
+    - What's a terminal? 
+        An end point to connect to a shared computer. 
+        PRINT BASED: https://en.wikipedia.org/wiki/Teletype_Model_33#/media/File:Teletype-IMG_7287.jpg
+        VIDEO: https://i.redd.it/jqhr6dzw3jez.jpg
+        The terminal had no CPU like the ones we have today or HDD itself. It just had a screen, a keyboard, and connection to another shared computer.
+    
+    As computers developed, the need to instruct computers via a command line stayed but the hardware was replaced by a software program. 
+    
+    - On Linux distros and Mac, this program is called Terminal, xterm, iterm, etc. 
+    - On windows, Win32 console, cmd.exe, PowerShell, etc.
+    
+    We will use Google Cloud's in-browser terminal emulator and open a connection to a remote machine. 
+    https://cloud.google.com/shell/
+    So instead of starting the bash program on our own machine, we are starting it on another machine and will let that remote machine execute our commands. All we will do is send our instructions to the remote machine. The act of opening a connection to this remote machine and starting bash (often done automatically) is called "shelling in".
+    
+    Terminal emulator creates a remote connection to GCE computer and starts the Bash program. 
+
+Bash can interpret commands entered at the prompt and commands written in files. For now, we will play with commands at the prompt. 
+
+BUT FIRST
+
+Directory Structure
+
+    Linux file structure is such that all files and directories live under a master directory call "root".
+    This creates a tree like structure of files and directories. To get to the root directory, you would use "cd /".
+    To reference a specific file you can use absolute or relative paths. Absolute paths start from the root of the file system where as relative file paths are local to current directory in which you reside. 
+    . references the current directory and .. references the parent.
+    Path parts are sperated by "/".
+    
+    https://www.linux.com/blog/learn/intro-to-linux/2018/4/linux-filesystem-explained
+
+COMMANDS:
+
+    echo "hello" vs echo hello you
+    
+    ls -la --> Directory Structure
+    cd / cd -
+    mkdir
+    man mkdir
+    pwd
+    history
+    touch
+    rm
+    echo "Hello" > file1
+    less file1
+    wget https://github.com/logston/Bash-Class/raw/master/Archive.zip
+    unzip Archive.zip
+    kill
+    ps aux
+    sudo
+
+    vim -> We'll play with this later
+    
+    FOCUS ON permissions, greping files, piping files, stdout, stderr, stdin
+
+
+Explain PATH
+
+Piping Contents
+
+echo "Hey!" > new_file.txt
+echo "This is my file." > new_file.txt
+echo "Hope you like it." >> new_file.txt
+
+
+Permissions
+each (rwx) group and all permutations has to be represented by a single number
+2 * 2 * 2 = 8 (octal)
+Can't use 1 2 and 3 because if the value were 3 the file could be execute or read and write
+So how do we assign numbers so that each each permutation get's its own octal
+r w x
+4 2 1
+
+Chmod - running a program that is +x vs -x
+
+Shebang line
+
+for (( a=1; a <= 5; a++ )) <- Inline processing / C-style
+for name in $(ls)    <- Subshell
+
+FUN: for i in $(seq 1 10); do say $i; done
+FUN: while true; do say "hi"; done
+FUN: while true; do say "hi"; done & <= background
+
+    kill
+    sudo <= become root user
+    curl <= great tool for testing APIs
+    ping 
+    
+In nano: sum.sh
+>>>>
+#!/bin/bash
+x=0
+for i in $@
+do
+   x=$((x + i))
+doneq
+echo $x
+<<<<<
+
+Permissions! 
+
+chmod +x sum.sh
+./sum.sh
+
+PATH and environment files, how does program lookup work?
+
+Second example with more details and use of for loop
+
+Write a program that just prints or says bad things 1,000,000 times: DONT EXCECUTE
+for i in $(seq 1000000)
+while true; do echo "WOOT"; done
+
+Exercises - write a program that executes when run from your home directory but is located in your /usr/local/bin, have it echo “Hello <Your Name>, you're in <directory name>”
+```
+#!/bin/bash
+
+echo "Hello Paul, you're in $PWD"
+```
+
+$ PATH=$PATH:$(pwd)
+
+Exit codes: echo $?
+
+Supplemental reading: http://guide.bash.academy/ Chapters 1-3
+
+File Descriptors
+0 - input
+1 - stdout
+2 - stderr
+
+grep

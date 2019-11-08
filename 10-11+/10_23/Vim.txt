@@ -1,0 +1,137 @@
+Vim - 
+
+https://vim-adventures.com/
+https://danielmiessler.com/study/vim/
+https://danielmiessler.com/images/vim_modes.png MODE PICTURE
+
+
+VERBS
+Verbs are the actions we take, and they can be performed on nouns. Here are some examples:
+
+    d: delete
+    c: change
+    y: yank (copy)
+    v: visually select (V for line vs. character)
+    
+Modifiers
+Modifiers are used before nouns to describe the way in which you’re going to do something. Some examples:
+
+    i: inside
+    a: around
+    NUM: number (e.g.: 1, 2, 10)
+    t: searches for something and stops before it
+    f: searches for that thing and lands on it
+    /: find a string (literal or regex)
+    
+Nouns
+In English, nouns are objects you do something to. They are objects. With vim it’s the same. Here are some vim nouns:
+
+    w: word
+    s: sentence
+    ): sentence (another way of doing it)
+    p: paragraph
+    }: paragraph (another way of doing it)
+    t: tag (think HTML/XML)
+    b: block (think programming)
+    
+You can use nouns in motion.
+
+VMN
+
+d2w
+
+j2w
+
+Movement
+j: move down one line
+k: move up one line
+h: move left one character
+l: move right one character
+
+
+working with your file
+Some quick basics on working with your file.
+
+    vim file: open your file in vim
+    :w: write your changes to the file
+    :q!: get out of vim (quit), but without saving your changes (!)
+    :wq: write your changes and exit vim
+    :saveas ~/some/path/: save your file to that locationvim
+    While :wq works I tend to use ZZ, which doesn’t require the “:” and just seems faster to me. You can also use :x
+    ZZ: a faster way to do :wq
+    
+Searching with 
+
+/ and then "n"
+? and then to search backwards
+
+f< # Jump forward and land on the < character
+t< # Jump forward and land right before the < character
+
+/{string}: search for string
+t: jump up to a character
+f: jump onto a character
+*: search for other instances of the word under your cursor
+n: go to the next instance when you’ve searched for a string
+N: go to the previous instance when you’ve searched for a string
+;: go to the next instance when you’ve jumped to a character
+,: go to the previous instance when you’ve jumped to a character
+
+0: move to the beginning of the line
+$: move to the end of the line
+^: move to the first non-blank character in the line
+t": jump to right before the next quotes
+f": jump and land on the next quotes
+
+w: move forward one word
+b: move back one word
+e: move to the end of your word
+
+W: move forward one big word
+B: move back one big word
+
+): move forward one sentence
+}: move forward one paragraph
+
+
+H: move to the top of the screen
+M: move to the middle of the screen
+L: move to the bottom of the screen
+gg: go to the top of the file
+G: go to the bottom of the file
+^U: move up half a screen
+^D: move down half a screen
+^F: page down
+^B: page up
+
+Ctrl-i: jump to your previous navigation location
+Ctrl-o: jump back to where you were
+
+:$line_numberH: move to a given line number
+M: move to the middle of the screen
+L: move to the bottom of the screen
+^E: scroll up one line
+^Y: scroll down one line
+^U: move up half a page
+^D: move down half a page
+^F: move down a page
+^B: move up a page
+
+
+Normal Mode is also known as Command Mode:
+
+    where you’re usually entering commands. Commands can be movements, deletions, or commands that do these things and then enter into Insert Mode.
+    
+Insert Mode is where you make changes to your file:
+    there are tons of ways of entering Insert Mode from Normal Mode. 
+    Again, don’t worry, this all becomes ridiculously simple with a bit of practice.
+    
+Visual Mode is a way to select text. 
+    It’s a lot like Normal Mode, except your movements change your highlighting. 
+    You can select text both character-wise or line-wise, and once in one of those modes your movements select more text.
+    
+The purpose of Visual Mode:
+    is to then perform some operation on all the content you have highlighted, which makes it very powerful.
+    
+Ex Mode is a mode where you drop down to the bottom, where you get a “:” prompt, and you can enter commands. More on that later. Just know that you can run some powerful command-line stuff from there.
+

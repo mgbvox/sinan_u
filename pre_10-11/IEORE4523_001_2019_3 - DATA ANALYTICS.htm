@@ -1,0 +1,2380 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://courseworks2.columbia.edu/courses/87054 -->
+<html class="gr__courseworks2_columbia_edu" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/css" rel="stylesheet">
+    <script async="" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/analytics.js"></script><script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+//<![CDATA[
+
+!function(){
+  function get(u){document.write('<scr'+'ipt src="'+ u +'"></sc'+'ript>')}
+  var o,s,v;
+  if (!(window.Promise && Object.assign && Object.values && [].find && [].includes && (o={},s=Symbol(),v={},o[s]=v,o[s]===v) && (function f(){}).bind().name==='bound f')) {
+    get("https://du11hjcvx0uqb.cloudfront.net/br/dist/ie11-polyfill-36fc8ad84a.js");
+  }
+  if (/Edge\/1[2-7]/i.test(navigator.userAgent)) delete window.fetch
+  if (!window.fetch) get("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js");
+}();
+      
+//]]>
+</script>
+  <script>window.fetchIgnoredByNewRelic = window.fetch</script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/favicon-e10d657a73.ico">
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/br/dist/images/apple-touch-icon-585e5d997d.png">
+  <link rel="stylesheet" media="all" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/variables-8391c84da435c9cfceea2b2b3317ff66.css">
+  <link rel="stylesheet" media="all" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/common-7958b3c072.css">
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="https://courseworks2.columbia.edu/web-app-manifest/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#008EE2">
+  <link rel="stylesheet" media="all" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/dashboard-a085ab90c2.css">
+<link rel="stylesheet" media="all" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/react_todo_sidebar-c3d01d6a66.css">
+<link rel="stylesheet" media="all" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/syllabus-e36f6bbece.css">
+<link rel="stylesheet" media="all" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/tinymce-0c01433900.css">
+<link rel="stylesheet" media="all" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/course_show-a61db6ba4b.css">
+  <link rel="stylesheet" media="all" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/canvas guest page.css">
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          e.preventDefault()
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+  <script src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/variables-8391c84da435c9cfceea2b2b3317ff66.js" defer="defer"></script>
+
+  <link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/New_York-c3226761e3.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/New_York-c3226761e3.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/en_US-80a0ce259b.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/main-e-e566bc07b5.js" as="script" type="text/javascript"><script src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/New_York-c3226761e3.js" defer="defer"></script>
+<script src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/en_US-80a0ce259b.js" defer="defer"></script>
+<script src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/main-e-e566bc07b5.js" defer="defer"></script><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/0-c-f2112c06a1.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/6-c-1ce3ca5f22.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/19-c-e41ed18d3e.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/24-c-8c88230ebc.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/30-c-d0b7c76790.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/syllabus-c-e36e72d586.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/course-c-9e18f8dc1a.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/1-c-98b5b29b00.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/2-c-22607143e1.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/3-c-d59c894e7f.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/4-c-e1fed61349.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/5-c-524de671f1.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/7-c-722912eb7e.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/8-c-ef0c27314b.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/9-c-d89cdc9f3a.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/10-c-d6ae76f672.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/12-c-0bc7bf04b1.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/14-c-49c90be82c.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/17-c-e88884a7fc.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/16-c-7e74e2b38c.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/23-c-d15b8a4f8c.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/47-c-cd23b9d394.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/49-c-b214cbc48f.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/51-c-62a464b550.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/60-c-de13e3e990.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/64-c-53e809a51d.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/72-c-de5ed49cda.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/71-c-ff07dec1b7.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/98-c-eb3f994e6a.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/courses_show-c-ca928b7b54.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/211-c-13607a2cdf.js" as="script" type="text/javascript"><link rel="preload" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/navigation_header-c-8b4b47eee0.js" as="script" type="text/javascript"><script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('syllabus');
+(window.bundles || (window.bundles = [])).push('course');
+(window.bundles || (window.bundles = [])).push('legacy/courses_show');
+(window.bundles || (window.bundles = [])).push('navigation_header');
+//]]>
+</script>
+    <link rel="alternate" type="application/atom+xml" title="Course Atom Feed" href="https://courseworks2.columbia.edu/feeds/courses/enrollment_lHgxa886etP05wXkRjBFIzGyhfPSPv3buYwHLS10.atom">
+  <title>IEORE4523_001_2019_3 - DATA ANALYTICS</title>
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', "UA-9138420-1", 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async="" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/analytics.js"></script>
+
+<style type="text/css"></style><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/0-c-f2112c06a1.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/6-c-1ce3ca5f22.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/19-c-e41ed18d3e.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/24-c-8c88230ebc.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/30-c-d0b7c76790.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/syllabus-c-e36e72d586.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/course-c-9e18f8dc1a.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/1-c-98b5b29b00.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/2-c-22607143e1.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/3-c-d59c894e7f.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/4-c-e1fed61349.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/5-c-524de671f1.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/7-c-722912eb7e.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/8-c-ef0c27314b.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/9-c-d89cdc9f3a.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/10-c-d6ae76f672.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/12-c-0bc7bf04b1.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/14-c-49c90be82c.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/17-c-e88884a7fc.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/16-c-7e74e2b38c.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/23-c-d15b8a4f8c.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/47-c-cd23b9d394.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/49-c-b214cbc48f.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/51-c-62a464b550.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/60-c-de13e3e990.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/64-c-53e809a51d.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/72-c-de5ed49cda.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/71-c-ff07dec1b7.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/98-c-eb3f994e6a.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/courses_show-c-ca928b7b54.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/211-c-13607a2cdf.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/navigation_header-c-8b4b47eee0.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/20-c-d2f68d4854.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/25-c-202d22b67b.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/40-c-ecaa48e090.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/110-c-93031953d3.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/169-c-070cbedf90.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/585-c-b157ce180c.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/575-c-1a335797ad.js"></script><script type="text/javascript" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/columbia.js"></script><link rel="stylesheet" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/KeyboardShortcuts-f4493af988.css" data-loaded-by-brandablecss="true"><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/11-c-172b46f422.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/13-c-fea22d7a52.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/22-c-7ef2da8076.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/21-c-d8f496774f.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/27-c-e9e29109dd.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/28-c-5b4a304d33.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/29-c-c1f7284c7a.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/32-c-265ae3bbe2.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/48-c-190ad31761.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/50-c-53679e83ad.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/54-c-b09e1d0b2c.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/69-c-0613438732.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/97-c-3eb88a9aea.js"></script><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/canvas-rce-old-async-chunk-c-f33063e05f.js"></script><link rel="stylesheet" href="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/Syllabus-460196264f.css" data-loaded-by-brandablecss="true"><style type="text/css" data-glamor=""></style><style type="text/css">.mejs-offscreen{clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:polygon(0px 0,0 0,0 0,0 0);position:absolute!important;height:1px;width:1px;overflow:hidden}.mejs-container{position:relative;background:#000;font-family:Helvetica,Arial,serif;text-align:left;vertical-align:top;text-indent:0}.mejs-fill-container,.mejs-fill-container .mejs-container{width:100%;height:100%}.mejs-fill-container{overflow:hidden}.mejs-container:focus{outline:0}.me-plugin{position:absolute}.mejs-embed,.mejs-embed body{width:100%;height:100%;margin:0;padding:0;background:#000;overflow:hidden}.mejs-fullscreen{overflow:hidden!important}.mejs-container-fullscreen{position:fixed;left:0;top:0;right:0;bottom:0;overflow:hidden;z-index:1000}.mejs-container-fullscreen .mejs-mediaelement,.mejs-container-fullscreen video{width:100%;height:100%}.mejs-clear{clear:both}.mejs-background{position:absolute;top:0;left:0}.mejs-mediaelement{position:absolute;top:0;left:0;width:100%;height:100%}.mejs-poster{position:absolute;top:0;left:0;background-size:contain;background-position:50% 50%;background-repeat:no-repeat}:root .mejs-poster img{display:none}.mejs-poster img{border:0;padding:0}.mejs-overlay{position:absolute;top:0;left:0}.mejs-overlay-play{cursor:pointer}.mejs-overlay-button{position:absolute;top:50%;left:50%;width:100px;height:100px;margin:-50px 0 0 -50px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/746c3af7a145a09239a36e5ef61cfea0.svg) no-repeat}.no-svg .mejs-overlay-button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/716436fb3df0d29e6b37dd62d952676a.png)}.mejs-overlay:hover .mejs-overlay-button{background-position:0 -100px}.mejs-overlay-loading{position:absolute;top:50%;left:50%;width:80px;height:80px;margin:-40px 0 0 -40px;background:#333;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.9);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.9)),to(rgba(0,0,0,.9)));background:-webkit-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-moz-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-o-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:-ms-linear-gradient(top,rgba(50,50,50,.9),rgba(0,0,0,.9));background:linear-gradient(rgba(50,50,50,.9),rgba(0,0,0,.9))}.mejs-overlay-loading span{display:block;width:80px;height:80px;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/76b326f4d44222126fee21076595bef5.gif) 50% 50% no-repeat}.mejs-container .mejs-controls{position:absolute;list-style-type:none;margin:0;padding:0;bottom:0;left:0;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));height:30px;width:100%}.mejs-container .mejs-controls div{list-style-type:none;background-image:none;display:block;float:left;margin:0;padding:0;width:26px;height:26px;font-size:11px;line-height:11px;font-family:Helvetica,Arial,serif;border:0}.mejs-controls .mejs-button button{cursor:pointer;display:block;font-size:0;line-height:0;text-decoration:none;margin:7px 5px;padding:0;position:absolute;height:16px;width:16px;border:0;background:transparent url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/40f56f5a736da4effeb790cedb8a52f0.svg) no-repeat}.no-svg .mejs-controls .mejs-button button{background-image:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/24a0227fbdd3acfd86ff03fc3fc6c8a4.png)}.mejs-controls .mejs-button button:focus{outline:dotted 1px #999}.mejs-container .mejs-controls .mejs-time{color:#fff;display:block;height:17px;width:auto;padding:10px 3px 0;overflow:hidden;text-align:center;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}.mejs-container .mejs-controls .mejs-time a{color:#fff;font-size:11px;line-height:12px;display:block;float:left;margin:1px 2px 0 0;width:auto}.mejs-controls .mejs-play button{background-position:0 0}.mejs-controls .mejs-pause button{background-position:0 -16px}.mejs-controls .mejs-stop button{background-position:-112px 0}.mejs-controls div.mejs-time-rail{direction:ltr;width:200px;padding-top:5px}.mejs-controls .mejs-time-rail span,.mejs-controls .mejs-time-rail a{display:block;position:absolute;width:180px;height:10px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer}.mejs-controls .mejs-time-rail .mejs-time-total{margin:5px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-time-rail .mejs-time-buffering{width:100%;background-image:-o-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255,255,255,.15)),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255,255,255,.15)),color-stop(0.75,rgba(255,255,255,.15)),color-stop(0.75,transparent),to(transparent));background-image:-webkit-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-moz-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:-ms-linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-image:linear-gradient(-45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);-webkit-background-size:15px 15px;-moz-background-size:15px 15px;-o-background-size:15px 15px;background-size:15px 15px;-webkit-animation:buffering-stripes 2s linear infinite;-moz-animation:buffering-stripes 2s linear infinite;-ms-animation:buffering-stripes 2s linear infinite;-o-animation:buffering-stripes 2s linear infinite;animation:buffering-stripes 2s linear infinite}@-webkit-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-moz-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-ms-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@-o-keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}@keyframes buffering-stripes{from{background-position:0 0}to{background-position:30px 0}}.mejs-controls .mejs-time-rail .mejs-time-loaded{background:#3caac8;background:rgba(60,170,200,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(44,124,145,.8)),to(rgba(78,183,212,.8)));background:-webkit-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-moz-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-o-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:-ms-linear-gradient(top,rgba(44,124,145,.8),rgba(78,183,212,.8));background:linear-gradient(rgba(44,124,145,.8),rgba(78,183,212,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-current{background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8));width:0}.mejs-controls .mejs-time-rail .mejs-time-handle{display:none;position:absolute;margin:0;width:10px;background:#fff;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;cursor:pointer;border:solid 2px #333;top:-2px;text-align:center}.mejs-controls .mejs-time-rail .mejs-time-float{position:absolute;display:none;background:#eee;width:36px;height:17px;border:solid 1px #333;top:-26px;margin-left:-18px;text-align:center;color:#111}.mejs-controls .mejs-time-rail .mejs-time-float-current{margin:2px;width:30px;display:block;text-align:center;left:0}.mejs-controls .mejs-time-rail .mejs-time-float-corner{position:absolute;display:block;width:0;height:0;line-height:0;border:solid 5px #eee;border-color:#eee transparent transparent;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:15px;left:13px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float{width:48px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current{width:44px}.mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner{left:18px}.mejs-controls .mejs-fullscreen-button button{background-position:-32px 0}.mejs-controls .mejs-unfullscreen button{background-position:-32px -16px}.mejs-controls .mejs-volume-button{}.mejs-controls .mejs-mute button{background-position:-16px -16px}.mejs-controls .mejs-unmute button{background-position:-16px 0}.mejs-controls .mejs-volume-button{position:relative}.mejs-controls .mejs-volume-button .mejs-volume-slider{height:115px;width:25px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;top:-115px;left:0;z-index:1;position:absolute;margin:0}.mejs-controls .mejs-volume-button:hover{-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-total{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.5);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-current{position:absolute;left:11px;top:8px;width:2px;height:100px;background:#ddd;background:rgba(255,255,255,.9);margin:0}.mejs-controls .mejs-volume-button .mejs-volume-slider .mejs-volume-handle{position:absolute;left:4px;top:-3px;width:16px;height:6px;background:#ddd;background:rgba(255,255,255,.9);cursor:N-resize;-webkit-border-radius:1px;-moz-border-radius:1px;border-radius:1px;margin:0}.mejs-controls a.mejs-horizontal-volume-slider{height:26px;width:56px;position:relative;display:block;float:left;vertical-align:middle}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#333;background:rgba(50,50,50,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));background:-webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:-ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));background:linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current{position:absolute;left:0;top:11px;width:50px;height:8px;margin:0;padding:0;font-size:1px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#fff;background:rgba(255,255,255,.8);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(255,255,255,.9)),to(rgba(200,200,200,.8)));background:-webkit-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-moz-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-o-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:-ms-linear-gradient(top,rgba(255,255,255,.9),rgba(200,200,200,.8));background:linear-gradient(rgba(255,255,255,.9),rgba(200,200,200,.8))}.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-handle{display:none}.mejs-controls .mejs-captions-button{position:relative}.mejs-controls .mejs-captions-button button{background-position:-48px 0}.mejs-controls .mejs-captions-button .mejs-captions-selector{position:absolute;bottom:26px;right:-51px;width:85px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px 10px 0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-captions-button .mejs-captions-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-captions-button .mejs-captions-selector ul li label{width:55px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-controls .mejs-captions-button .mejs-captions-translations{font-size:10px;margin:0 0 5px}.mejs-chapters{position:absolute;top:0;left:0;border-right:solid 1px #fff;width:10000px;z-index:1}.mejs-chapters .mejs-chapter{position:absolute;float:left;background:#222;background:rgba(0,0,0,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(50,50,50,.7)),to(rgba(0,0,0,.7)));background:-webkit-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-moz-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-o-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:-ms-linear-gradient(top,rgba(50,50,50,.7),rgba(0,0,0,.7));background:linear-gradient(rgba(50,50,50,.7),rgba(0,0,0,.7));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232, endColorstr=#000000);overflow:hidden;border:0}.mejs-chapters .mejs-chapter .mejs-chapter-block{font-size:11px;color:#fff;padding:5px;display:block;border-right:solid 1px #333;border-bottom:solid 1px #333;cursor:pointer}.mejs-chapters .mejs-chapter .mejs-chapter-block-last{border-right:0}.mejs-chapters .mejs-chapter .mejs-chapter-block:hover{background:#666;background:rgba(102,102,102,.7);background:-webkit-gradient(linear,0 0,0 100%,from(rgba(102,102,102,.7)),to(rgba(50,50,50,.6)));background:-webkit-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-moz-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-o-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:-ms-linear-gradient(top,rgba(102,102,102,.7),rgba(50,50,50,.6));background:linear-gradient(rgba(102,102,102,.7),rgba(50,50,50,.6));filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666, endColorstr=#323232)}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title{font-size:12px;font-weight:700;display:block;white-space:nowrap;text-overflow:ellipsis;margin:0 0 3px;line-height:12px}.mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan{font-size:12px;line-height:12px;margin:3px 0 4px;display:block;white-space:nowrap;text-overflow:ellipsis}.mejs-captions-layer{position:absolute;bottom:0;left:0;text-align:center;line-height:20px;font-size:16px;color:#fff}.mejs-captions-layer a{color:#fff;text-decoration:underline}.mejs-captions-layer[lang=ar]{font-size:20px;font-weight:400}.mejs-captions-position{position:absolute;width:100%;bottom:15px;left:0}.mejs-captions-position-hover{bottom:35px}.mejs-captions-text,.mejs__captions-text *{padding:0;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(20,20,20,.5);white-space:pre-wrap;-webkit-box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5);box-shadow:5px 0 0 rgba(20,20,20,.5),-5px 0 0 rgba(20,20,20,.5)}.me-cannotplay{}.me-cannotplay a{color:#fff;font-weight:700}.me-cannotplay span{padding:15px;display:block}.mejs-controls .mejs-loop-off button{background-position:-64px -16px}.mejs-controls .mejs-loop-on button{background-position:-64px 0}.mejs-controls .mejs-backlight-off button{background-position:-80px -16px}.mejs-controls .mejs-backlight-on button{background-position:-80px 0}.mejs-controls .mejs-picturecontrols-button{background-position:-96px 0}.mejs-contextmenu{position:absolute;width:150px;padding:10px;border-radius:4px;top:0;left:0;background:#fff;border:solid 1px #999;z-index:1001}.mejs-contextmenu .mejs-contextmenu-separator{height:1px;font-size:0;margin:5px 6px;background:#333}.mejs-contextmenu .mejs-contextmenu-item{font-family:Helvetica,Arial,serif;font-size:12px;padding:4px 6px;cursor:pointer;color:#333}.mejs-contextmenu .mejs-contextmenu-item:hover{background:#2C7C91;color:#fff}.mejs-controls .mejs-sourcechooser-button{position:relative}.mejs-controls .mejs-sourcechooser-button button{background-position:-128px 0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector{position:absolute;bottom:26px;right:-10px;width:130px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:10px;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li{margin:0 0 6px;padding:0;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector ul li label{width:100px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:10px}.mejs-postroll-layer{position:absolute;bottom:0;left:0;width:100%;height:100%;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);z-index:1000;overflow:hidden}.mejs-postroll-layer-content{width:100%;height:100%}.mejs-postroll-close{position:absolute;right:0;top:0;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);color:#fff;padding:4px;z-index:100;cursor:pointer}div.mejs-speed-button{width:46px!important;position:relative}.mejs-controls .mejs-button.mejs-speed-button button{background:transparent;width:36px;font-size:11px;line-height:normal;color:#fff}.mejs-controls .mejs-speed-button .mejs-speed-selector{position:absolute;top:-100px;left:-10px;width:60px;height:100px;background:url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/703c659e4bf563a05c6338a1727e006c.png);background:rgba(50,50,50,.7);border:solid 1px transparent;padding:0;overflow:hidden;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label.mejs-speed-selected{color:rgba(33,248,248,1)}.mejs-controls .mejs-speed-button .mejs-speed-selector ul{margin:0;padding:0;display:block;list-style-type:none!important;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li{margin:0 0 6px;padding:0 10px;list-style-type:none!important;display:block;color:#fff;overflow:hidden}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li input{clear:both;float:left;margin:3px 3px 0 5px}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li label{width:60px;float:left;padding:4px 0 0;line-height:15px;font-family:Helvetica,Arial,serif;font-size:11px;color:#fff;margin-left:5px;cursor:pointer}.mejs-controls .mejs-speed-button .mejs-speed-selector ul li:hover{background-color:#c8c8c8!important;background-color:rgba(255,255,255,.4)!important}.mejs-controls .mejs-button.mejs-jump-forward-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/15e1ac8cbacc2efdf1ac2677de48a253.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-jump-forward-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}.mejs-controls .mejs-button.mejs-skip-back-button{background:transparent url(https://du11hjcvx0uqb.cloudfront.net/br/dist/webpack-production/cd6dc830eb45b3a5a96bbc936ff54846.png) no-repeat 3px 3px}.mejs-controls .mejs-button.mejs-skip-back-button button{background:transparent;font-size:9px;line-height:normal;color:#fff}</style><style type="text/css">/*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* customizations to mediaelementplayer css */
+
+/*
+  Because this file is not proccessed by our brandable_css sass pipeline,
+  it cannot use our sass-direction helpers. So we have to handle RTL manually
+  by putting direction-specific styles in [dir="ltr"] or [dir="rtl"] blocks.
+*/
+/* stylelint-disable property-blacklist, declaration-property-value-blacklist */
+
+/* good menu widths */
+.mejs-sourcechooser-selector {
+  width: 160px;
+}
+.mejs-sourcechooser-selector label {
+  width: 160px !important;
+}
+
+.mejs-captions-selector {
+  width: 105px;
+}
+[dir="ltr"]  .mejs-captions-selector { text-align: left }
+[dir="rtl"]  .mejs-captions-selector { text-align: right }
+
+.mejs-captions-selector label {
+  width: 70px !important;
+}
+
+/* Subtitile upload link */
+.mejs-captions-selector .upload-track {
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+[dir="ltr"] .mejs-captions-selector .upload-track {
+  margin-right: 0px;
+  margin-left: 5px;
+  float: left;
+}
+[dir="rtl"] .mejs-captions-selector .upload-track {
+  margin-left: 0px;
+  margin-right: 5px;
+  float: right;
+}
+
+/* "x" button to remove a subtitle */
+.mejs-captions-selector a[data-remove] {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+[dir="ltr"] .mejs-captions-selector a[data-remove] { right: 0 }
+[dir="rtl"] .mejs-captions-selector a[data-remove] { left: 0 }
+
+
+/* style menu items without a radio button */
+.mejs-button [role="menu"] {
+  padding: 0 !important;
+}
+ /* compensate for above 0 padding */
+ .mejs-button [role="menu"] ul li {
+  position: relative;
+  padding: 0 10px !important;
+}
+/* add a hover effect */
+.mejs-button [role="menu"] ul li:hover {
+  background-color: #c8c8c8 !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+.mejs-button [role="menu"] ul li input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+}
+.mejs-button [role="menu"] ul li label {
+  cursor: pointer;
+}
+[dir="ltr"] .mejs-button [role="menu"] ul li label { margin-left: 5px }
+[dir="rtl"] .mejs-button [role="menu"] ul li label { margin-right: 5px }
+
+
+.mejs-button [role="menu"] label.mejs-selected {
+  color: #21f8f8 !important;
+}
+
+/* stylelint-enable property-blacklist, declaration-property-value-blacklist */
+</style><script charset="utf-8" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/586-c-5aa0d6b238.js"></script><script type="text/javascript" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/evalkit.min.js"></script></head>
+
+<body class="with-left-side course-menu-expanded with-right-side with-embedded-chat syllabus primary-nav-expanded context-course_87054 webkit chrome no-touch" data-gr-c-s-loaded="true">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder" role="alert" aria-live="assertive" aria-relevant="additions" class="screenreader-only" aria-atomic="false"></div>
+
+<div id="application" class="ic-app">
+  
+  <header id="header" class="ic-app-header no-print ">
+    <a href="https://courseworks2.columbia.edu/courses/87054#content" id="skip_navigation_link">Skip To Content</a>
+      <div role="region" class="ic-app-header__main-navigation" aria-label="Global Navigation">
+        <div class="ic-app-header__logomark-container">
+          <a href="https://courseworks2.columbia.edu/" class="ic-app-header__logomark">
+            <span class="screenreader-only">Dashboard</span>
+          </a>
+        </div>
+        <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_profile_link" role="button" href="https://courseworks2.columbia.edu/profile" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <div class="ic-avatar ">
+                    <img src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/avatar-50.png" alt="Mehmet Uray">
+                  </div>
+                </div>
+                <div class="menu-item__text">
+                  Account
+                </div>
+              </a>
+            </li>
+          <li class="ic-app-header__menu-list-item ">
+            <a id="global_nav_dashboard_link" href="https://courseworks2.columbia.edu/" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z"></path></svg>
+
+              </div>
+              <div class="menu-item__text">Dashboard</div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item "><a id="global_nav_mycourses_link" href="https://courseworks2.columbia.edu/users/432445/external_tools/10924" class="ic-app-header__menu-list-link"><div class="menu-item-icon-container" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 512.004 512.004" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M291.057,242.811c1.51,2.953,4.514,4.659,7.62,4.659c1.297,0,2.628-0.299,3.866-0.93 c0.503-0.256,50.731-25.771,75.503-33.596c4.489-1.425,6.98-6.221,5.555-10.709c-1.417-4.489-6.178-6.989-10.709-5.572 c-26.095,8.252-75.981,33.596-78.097,34.671C290.596,233.467,288.924,238.605,291.057,242.811z"></path><path d="M298.677,145.071c1.297,0,2.628-0.299,3.866-0.93c0.503-0.256,50.731-25.771,75.503-33.596 c4.489-1.425,6.98-6.221,5.555-10.709c-1.417-4.489-6.178-6.989-10.709-5.572c-26.095,8.252-75.981,33.596-78.097,34.671 c-4.198,2.133-5.871,7.27-3.738,11.477C292.567,143.364,295.571,145.071,298.677,145.071z"></path><path d="M503.469,128.004c-4.719,0-8.533,3.823-8.533,8.533v332.8c0,14.114-11.486,25.6-25.6,25.6h-204.8v-19.635 c12.442-4.352,44.851-14.498,76.8-14.498c74.334,0,124.809,16.461,125.312,16.631c2.568,0.853,5.436,0.427,7.68-1.178 c2.227-1.604,3.541-4.181,3.541-6.921V93.871c0-4.002-2.773-7.467-6.682-8.329c0,0-6.69-1.493-18.125-3.593 c-4.617-0.853-9.079,2.219-9.933,6.844c-0.853,4.642,2.21,9.088,6.844,9.941c4.361,0.802,8.013,1.51,10.829,2.074v357.188 c-19.337-5.069-62.276-14.259-119.467-14.259c-37.18,0-73.702,12.211-85.001,16.35c-10.044-4.437-40.405-16.35-77.133-16.35 c-58.778,0-107.196,9.694-128,14.618V100.475c17.041-4.19,67.371-15.138,128-15.138c31.113,0,57.796,9.685,68.267,14.063v335.804 c0,3.072,1.655,5.914,4.326,7.424c2.671,1.519,5.965,1.476,8.602-0.111c0.845-0.503,85.393-51.004,160.435-76.015 c3.49-1.169,5.837-4.42,5.837-8.098V8.537c0-2.799-1.374-5.419-3.678-7.014c-2.287-1.596-5.222-1.963-7.859-0.981 C346.856,26.15,277.771,69.141,277.079,69.568c-3.994,2.5-5.214,7.765-2.714,11.759c2.492,3.994,7.757,5.214,11.759,2.714 c0.631-0.401,60.732-37.794,123.477-63.027v331.281c-58.249,20.241-119.066,53.291-145.067,68.087V93.871 c0-3.234-1.826-6.187-4.719-7.637c-1.468-0.725-36.437-17.963-80.614-17.963c-77.107,0-136.388,16.683-138.88,17.399 c-3.661,1.041-6.187,4.395-6.187,8.201v375.467c0,2.671,1.263,5.197,3.388,6.81c1.502,1.135,3.311,1.724,5.146,1.724 c0.785,0,1.57-0.111,2.338-0.333c0.589-0.162,59.597-16.734,134.195-16.734c31.198,0,57.856,9.711,68.267,14.071v20.062h-204.8 c-14.114,0-25.6-11.486-25.6-25.6v-332.8c0-4.71-3.823-8.533-8.533-8.533s-8.533,3.823-8.533,8.533v332.8 c0,23.526,19.14,42.667,42.667,42.667h426.667c23.526,0,42.667-19.14,42.667-42.667v-332.8 C512.002,131.827,508.188,128.004,503.469,128.004z"></path><path d="M291.057,191.611c1.51,2.953,4.514,4.659,7.62,4.659c1.297,0,2.628-0.299,3.866-0.93 c0.503-0.256,50.731-25.771,75.503-33.596c4.489-1.425,6.98-6.221,5.555-10.709c-1.417-4.489-6.178-6.989-10.709-5.572 c-26.095,8.252-75.981,33.596-78.097,34.671C290.596,182.267,288.924,187.405,291.057,191.611z"></path><path d="M291.057,294.011c1.51,2.953,4.514,4.659,7.62,4.659c1.297,0,2.628-0.299,3.866-0.93 c0.503-0.256,50.731-25.771,75.503-33.596c4.489-1.425,6.98-6.221,5.555-10.709c-1.417-4.489-6.178-6.989-10.709-5.572 c-26.095,8.252-75.981,33.596-78.097,34.671C290.596,284.667,288.924,289.805,291.057,294.011z"></path><path d="M206.748,158.366c-52.693-12.365-112.572,3.388-115.089,4.062c-4.548,1.22-7.253,5.896-6.033,10.453 c1.024,3.814,4.471,6.323,8.235,6.323c0.734,0,1.476-0.094,2.219-0.29c0.572-0.162,58.223-15.326,106.778-3.934 c4.565,1.067,9.182-1.775,10.257-6.366C214.189,164.032,211.339,159.441,206.748,158.366z"></path><path d="M206.748,209.566c-52.693-12.356-112.572,3.388-115.089,4.062c-4.548,1.22-7.253,5.897-6.033,10.453 c1.024,3.814,4.471,6.323,8.235,6.323c0.734,0,1.476-0.094,2.219-0.29c0.572-0.162,58.223-15.326,106.778-3.934 c4.565,1.067,9.182-1.775,10.257-6.366C214.189,215.232,211.339,210.641,206.748,209.566z"></path><path d="M291.057,345.211c1.51,2.953,4.514,4.659,7.62,4.659c1.297,0,2.628-0.299,3.866-0.93 c0.503-0.256,50.731-25.771,75.503-33.596c4.489-1.425,6.98-6.221,5.555-10.709c-1.417-4.488-6.178-6.989-10.709-5.572 c-26.095,8.252-75.981,33.596-78.097,34.671C290.596,335.867,288.924,341.005,291.057,345.211z"></path><path d="M206.748,260.766c-52.693-12.356-112.572,3.379-115.089,4.062c-4.548,1.22-7.253,5.897-6.033,10.453 c1.024,3.814,4.471,6.332,8.235,6.332c0.734,0,1.476-0.102,2.219-0.299c0.572-0.162,58.223-15.326,106.778-3.934 c4.565,1.067,9.182-1.775,10.257-6.366C214.189,266.432,211.339,261.841,206.748,260.766z"></path><path d="M206.748,363.166c-52.693-12.365-112.572,3.388-115.089,4.062c-4.548,1.22-7.253,5.897-6.033,10.453 c1.024,3.814,4.471,6.332,8.235,6.332c0.734,0,1.476-0.102,2.219-0.299c0.572-0.162,58.223-15.326,106.778-3.934 c4.565,1.058,9.182-1.775,10.257-6.366C214.189,368.832,211.339,364.241,206.748,363.166z"></path><path d="M206.748,311.966c-52.693-12.365-112.572,3.379-115.089,4.062c-4.548,1.22-7.253,5.897-6.033,10.453 c1.024,3.814,4.471,6.332,8.235,6.332c0.734,0,1.476-0.102,2.219-0.299c0.572-0.162,58.223-15.326,106.778-3.934 c4.565,1.067,9.182-1.775,10.257-6.366C214.189,317.632,211.339,313.041,206.748,311.966z"></path></svg></div><div class="menu-item__text">My Courses</div></a></li><li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+            <a id="global_nav_courses_link" role="button" href="https://courseworks2.columbia.edu/courses" class="ic-app-header__menu-list-link columbia_bound">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"></path></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Courses
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_calendar_link" href="https://courseworks2.columbia.edu/calendar" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"></path></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Calendar
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_conversations_link" href="https://courseworks2.columbia.edu/conversations" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container">
+                <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"></path></svg>
+</span>
+                <span class="menu-item__badge" style="display: none"><span class="fdaJD_bGBk">0 unread messages</span><span aria-hidden="true">0</span></span>
+              </div>
+              <div class="menu-item__text">
+                Inbox
+              </div>
+            </a>
+          </li>
+            
+
+          <li class="ic-app-header__menu-list-item">
+           <a id="global_nav_help_link" role="button" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+              <div class="menu-item-icon-container" role="presentation">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65" transform="translate(-5.2 -5.2)"></path></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Help
+              </div>
+</a>          </li>
+        </ul>
+      </div>
+      <div class="ic-app-header__secondary-navigation">
+        <ul class="ic-app-header__menu-list">
+          <li class="menu-item ic-app-header__menu-list-item">
+            <button id="primaryNavToggle" class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle" aria-label="Minimize global navigation" title="Minimize global navigation">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"></path>
+</svg>
+
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    <div id="global_nav_tray_container"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="https://courseworks2.columbia.edu/courses/87054#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/saved_resource.html" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide Courses Navigation Menu" title="Hide Courses Navigation Menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+          <div class="ic-app-crumbs">
+        <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="https://courseworks2.columbia.edu/"><span class="ellipsible">      <i class="icon-home" title="My Dashboard">
+        <span class="screenreader-only">My Dashboard</span>
+      </i>
+</span></a></li><li id="crumb_course_87054"><a href="https://courseworks2.columbia.edu/courses/87054"><span class="ellipsible">IEORE4523_001_2019_3 - DATA ANALYTICS</span></a></li><li><span class="ellipsible">Syllabus</span></li></ul></nav>
+        </div>
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side" class="ic-app-course-menu list-view" style="display: block">
+              <span id="section-tabs-header-subtitle" class="ellipsis">Fall 2019</span>
+            <nav role="navigation" aria-label="Courses Navigation Menu"><ul id="section-tabs"><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054" title="Home" class="home" tabindex="0">Home</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/assignments" title="Assignments" class="assignments" tabindex="0">Assignments</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/discussion_topics" title="Discussions" class="discussions" tabindex="0">Discussions</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/grades" title="Grades" class="grades" tabindex="0">Grades</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/users" title="People" class="people" tabindex="0">People</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/files" title="Files" class="files" tabindex="0">Files</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/assignments/syllabus" title="Syllabus" class="syllabus active" tabindex="0">Syllabus</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/quizzes" title="Quizzes" class="quizzes" tabindex="0">Quizzes</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/conferences" title="Conferences" class="conferences" tabindex="0">Conferences</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/collaborations" title="Collaborations" class="collaborations" tabindex="0">Collaborations</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/382" title="Chat" class="context_external_tool_382" tabindex="0">Chat</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/1456" title="Piazza" class="context_external_tool_1456" tabindex="0">Piazza</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/3382" title="Piazza" class="context_external_tool_3382" tabindex="0">Piazza</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/3900" title="Research Guide" class="context_external_tool_3900" tabindex="0">Research Guide</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/7232" title="Course Info" class="context_external_tool_7232" tabindex="0">Course Info</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/9535" title="Student Course Evaluations" class="context_external_tool_9535" tabindex="0">Student Course Evaluations</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/9536" title="Instructor Course Evaluations" class="context_external_tool_9536" tabindex="0">Instructor Course Evaluations</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/9537" title="Admin Course Evaluations" class="context_external_tool_9537" tabindex="0">Admin Course Evaluations</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/12720" title="Library Reserves" class="context_external_tool_12720" tabindex="0">Library Reserves</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/13781" title="Textbooks" class="context_external_tool_13781" tabindex="0">Textbooks</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/13874" title="Mailtool" class="context_external_tool_13874" tabindex="0">Mailtool</a></li><li class="section"><a href="https://courseworks2.columbia.edu/courses/87054/external_tools/17178" title="NameCoach" class="context_external_tool_17178" tabindex="0">NameCoach</a></li></ul></nav>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+<h1 class="screenreader-only">IEORE4523_001_2019_3 - DATA ANALYTICS</h1>
+
+
+
+<div id="course_home_content">
+    
+<div class="ic-Action-header">
+  <div class="ic-Action-header__Primary">
+    <h2 class="ic-Action-header__Heading">IEORE4523_001_2019_3 - DATA ANALYTICS</h2>
+  </div>
+  <div class="ic-Action-header__Secondary">
+    <a href="https://courseworks2.columbia.edu/courses/87054#" class="jump_to_today_link">Jump to Today</a>
+  </div>
+</div>
+
+<div id="course_syllabus" style="margin-bottom: 10px;" class="user_content enhanced">
+  <h2><span>Contact information</span></h2>
+<p><span style="font-size: 12pt;"><strong>Professor</strong><span style="font-weight: 400;">: Uday Menon (</span><a href="mailto:hj2203@columbia.edu"><span style="font-weight: 400;">ucm2104@columbia.edu</span></a><span style="font-weight: 400;">)</span></span><br><span style="font-size: 12pt;"><strong>Office Hours</strong><span style="font-weight: 400;">: Monday, Wednesday 1 to 2 (or by appointment)<br></span><strong>Office</strong>: 309 Mudd</span></p>
+<p><br><span style="font-size: 12pt;"><strong>TAs</strong><span style="font-weight: 400;">:TBA<br></span></span></p>
+<div>
+<div>
+<strong style="font-size: 12pt;">TA Room</strong><span style="font-size: 12pt;"> : 301 Mudd</span><br><span style="font-size: 1rem;"></span>
+</div>
+</div>
+<div>
+<br><span style="font-weight: 400;"><span style="font-size: 10pt;"><span style="font-size: 12pt;"><strong>Class hours</strong>: Monday 8:40 - 11:10AM</span><br><span style="font-size: 12pt;"><strong>Classroom</strong>: 1127 Mudd</span><br><span style="font-size: 12pt;"><strong>Discussion</strong>: <a href="https://piazza.com/columbia/fall2019/ieore4523_001_2019_3dataanalytics/home" class="external" target="_blank" rel="noreferrer noopener"><span>https://<span>piazza.com/columbia/fall2019/ieore4523_001_2019_3dataanalytics/home</span></span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></span><br></span></span>
+</div>
+<h2><span style="font-weight: 400;">Course Description</span></h2>
+<p><span style="font-weight: 400;">The goal of this course is to give you a working knowledge of how to use Python to extract knowledge and information from data. At the end of this course you will be competent in using Python libraries to work with and analyze offline as well as online data. We will (briefly) review the basics of Python programming, cover the rudiments of data cleaning and data analysis, machine learning (regression, decision trees, clustering), deep learning (neural networks) and data visualization packages (numpy, Pandas, Scikit-learn) available in Python. We will examine how we can use Python libraries for extracting value from text (text mining) and understanding the properties of networks (network analysis).&nbsp;</span></p>
+<p><span style="font-weight: 400;">The course contains a group project component that will require you to gather, store, and analyze a data set of your choosing. Individual evaluation components include quizzes, assignments, class participation, and&nbsp; in-class written exams.</span></p>
+<p><span style="font-weight: 400;">This is an intensive hands on course so be prepared for a lot of work and a significant time commitment. But your reward - proficiency in data analysis skills - will be substantial!</span></p>
+<h2><span style="font-weight: 400;">Prerequisites</span></h2>
+<p><span style="font-weight: 400;">Prior exposure to some programming language is helpful and you should either have taken, or be concurrently registered in, the Tools for Analytics class. </span></p>
+<h2><span style="font-weight: 400;">Evaluation components</span></h2>
+<h3><span style="font-weight: 400;">1. Assignments</span></h3>
+<p><span style="font-weight: 400;">Assignment due dates will be posted on the calendar and all assignments will require submission online in the assignments folder. It is your responsibility to check the calendar and keep track of due dates. Assignments turned in later than one minute after the deadline but less than one week after the deadline will automatically be penalized 30%. Assignments turned in more than one week after the deadline will not receive any credit. </span></p>
+<h3><span style="font-weight: 400;">2. Project</span></h3>
+<p><span style="font-weight: 400;">There is no better way to learn something than to go out and use it so start thinking about a data set you’d like to analyze. Final submission will include a brief (1-2 page) design report, Python code, and an in­-class presentation and demonstration. It is important that&nbsp; your focus should not be only on the analysis but also on the presentation of your work and the results in an easy to understand manner.</span></p>
+<h3><span style="font-weight: 400;">3. Quizzes</span></h3>
+<p><span style="font-weight: 400;">There will be several short quizzes - in class and online. The purpose of the quizzes is to quickly check recall (and, indirectly, to make sure you come to class!) so you're not really expected to prepare for them. </span></p>
+<h3><span style="font-weight: 400;">3. Exams</span></h3>
+<p><span style="font-weight: 400;">We will have two in-class written exams - a midterm and a final&nbsp;that will be weighted 1:2 for a total of 40% of the grade.&nbsp;</span></p>
+<p><span style="font-weight: 400;">&nbsp;</span></p>
+<h2><span style="font-weight: 400;">Computers in class</span></h2>
+<p><span style="font-weight: 400;">Computers are a requirement for this course and you are expected to bring one for every class. We’ll do a lot of programming - the best way to learn is to see something in action and Python is an especially good language for making things happen. Make sure that your laptops have sufficient charge for the class! </span><span style="font-weight: 400;"></span></p>
+<p><strong>Mac vs Windows</strong><span style="font-weight: 400;">: Either is fine but, if you have the choice, then please use a Mac. It is much easier to install needed libraries on a Mac than it is on a Windows machine. In particular, if you have a Mac and are using some sort of Windows emulator then please use Mac OS-X and not the Windows emulator. The double redirection will make everything a lot slower. But, either Mac or Windows will work so don’t worry if you’re a Windows user. </span><span style="font-weight: 400;"></span></p>
+<p><strong>Python2 versus. Python3</strong><span style="font-weight: 400;">. Unfortunately, there are two versions of Python and they aren’t compatible. We’ll be using Python3 (current version: 3.7) mainly because Python2 is slated to go away (though, in the open source world, that doesn’t mean a whole lot!) but also because it is a better language. </span><span style="font-weight: 400;"><br></span></p>
+<h1>&nbsp;</h1>
+<h1>
+<span style="font-weight: 400;">Course topics</span><span style="font-weight: 400;"></span>
+</h1>
+<ol>
+<ol>
+<li>
+<span style="font-weight: 400;"></span> <span style="font-weight: 400;">Python review</span>
+</li>
+<li>
+<span style="font-weight: 400;"></span> <span style="font-weight: 400;">Numpy and pandas</span>
+</li>
+<li>
+<span style="font-weight: 400;"> </span> <span style="font-weight: 400;">Data analysis and visualization</span>
+</li>
+<li>
+<span style="font-weight: 400;"></span> <span style="font-weight: 400;">Text mining</span>
+</li>
+<li>
+<span style="font-weight: 400;"></span> <span style="font-weight: 400;">Analysis of networks</span>
+</li>
+<li>Machine learning (regression, decision trees, clustering,deep learning)</li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;<span style="font-weight: 400;"></span></p>
+<h2>
+<span style="font-weight: 400;">Texts</span><span style="font-weight: 400;"></span>
+</h2>
+<p><span style="font-weight: 400;">There is no required text for this class. The following will be helpful if you want to go above and beyond the material covered in the course: </span></p>
+<p><span style="font-weight: 400;">&nbsp;</span></p>
+<ul>
+<ul>
+<li style="font-weight: 400;">
+<i><span style="font-weight: 400;">Learning Python, 5th Edition Powerful Object-Oriented Programming</span></i><span style="font-weight: 400;">, Mark Lutz. O'Reilly Media, 2013.</span>
+</li>
+<li style="font-weight: 400;">
+<i><span style="font-weight: 400;">Web Scraping with Python: Collecting Data from the Modern Web</span></i><span style="font-weight: 400;"> by Ryan Mitchell. O’Reilly Media July 2015. ISBN: 978-1491910290</span>
+</li>
+</ul>
+</ul>
+<p><i></i></p>
+<ul>
+<li style="font-weight: 400;"><i><span style="font-weight: 400;">Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython</span><span style="font-weight: 400;"> by Wes McKinney. O’Reilly Media (<span>2017). ISBN:978-1491957660</span></span></i></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&nbsp;</span></p>
+<h2><span style="font-weight: 400;">Online resources</span></h2>
+<p><span>Python documentation:&nbsp;<a href="http://docs.python.org/3.6/index.html" class="external" target="_blank" rel="noreferrer noopener"><span>http://docs.python.org/3.6/index.html</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></span></p>
+<p><span>Python tutorial:&nbsp;</span><a href="https://docs.python.org/3.6/tutorial/" class="external" target="_blank" rel="noreferrer noopener"><span><span>https://docs.python.org/3.6/tutorial/</span></span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></p>
+<p><span>Python Regular Expressions&nbsp;<a href="https://docs.python.org/3.6/library/re.html" class="external" target="_blank" rel="noreferrer noopener"><span>https://docs.python.org/3.6/library/re.html</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></span></p>
+<p><span></span><span>BeautifulSoup:&nbsp;</span><a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/" class="external" target="_blank" rel="noreferrer noopener"><span><span>http://www.crummy.com/software/BeautifulSoup/bs4/doc/</span></span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></p>
+<p><span>Pandas:&nbsp;</span><a href="http://pandas.pydata.org/pandas-docs/stable/" class="external" target="_blank" rel="noreferrer noopener"><span><span>http://pandas.pydata.org/pandas-docs/stable/</span></span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></p>
+<p><span>NLTK:&nbsp;</span><a href="http://www.nltk.org/" class="external" target="_blank" rel="noreferrer noopener"><span><span>http://www.nltk.org/</span></span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></p>
+<p><span>Big Data&nbsp;</span><a href="http://www.mmds.org/" class="external" target="_blank" rel="noreferrer noopener"><span><span>http://www.mmds.org/</span></span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></p>
+<p><span>SQL:&nbsp;<a href="http://www.w3schools.com/sql/" class="external" target="_blank" rel="noreferrer noopener"><span>http://www.w3schools.com/sql/</span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></span></p>
+<p><span>MySQL:&nbsp;</span><a href="http://www.plumcreek.us/mysql/" class="external" target="_blank" rel="noreferrer noopener"><span><span>http://www.plumcreek.us/mysql/</span></span><span aria-hidden="true" class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span><span class="screenreader-only">&nbsp;(Links to an external site.)</span></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<div id="course_syllabus_details" style="display: none;">
+  <p>The syllabus page shows a table-oriented view of the course schedule, and the basics of
+course grading.  You can add any other comments, notes, or thoughts you have about the course
+structure, course policies or anything else.</p>
+
+<p>To add some comments, click the "Edit" link at the top.</p>
+</div>
+<form id="edit_course_syllabus_form" style="display: none; margin-bottom: 10px;" action="https://courseworks2.columbia.edu/courses/87054" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="authenticity_token" value="F6MA7z09SkYLotkjEEC1iBrbYLAEji47XvQeIjD3ve1j6lqecAQCDGTbg3dpId3BUZkm2DzlXV0x21lEWZT2hA==">
+    <div style="float: right;">
+      <a href="https://courseworks2.columbia.edu/courses/87054#" class="toggle_views_link toggle_html_editor_link">HTML Editor</a>
+      <a href="https://courseworks2.columbia.edu/courses/87054#" class="toggle_views_link toggle_rich_editor_link" style="display:none;">Rich Content Editor</a>
+    </div>
+  <label for="course_syllabus_body">Syllabus Description:</label>
+  <div class="clear"></div>
+  <textarea style="width: 100%; height: 300px;" id="course_syllabus_body" name="course[syllabus_body]"></textarea>
+  <div class="form-actions">
+    <button type="button" class="btn cancel_button">Cancel</button>
+    <button type="submit" class="btn btn-primary">Update Syllabus</button>
+  </div>
+</form>
+<h2>Course Summary:</h2>
+
+<div id="syllabusContainer"><div id="syllabus_links">
+  
+    &nbsp;
+  
+</div>
+<table id="syllabus" class="ic-Table ic-Table--condensed">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 25%;">Date</th>
+      <th scope="col" style="width: 75%;">
+        <div style="float: right;"></div>
+        Details
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr class="date date_passed events_2019_09_09">
+      <td scope="row" valign="top" class="day_date" data-date="2019_09_09">
+        
+          Mon Sep 9, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168433" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168433&amp;include_contexts=course_87054">Class 1: Crash Course in Python</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Sep 9 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Sep 9 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326743" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326743">Assignment 0: Software installation</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Sep 9 at 8:40am"> 8:40am</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_09_16">
+      <td scope="row" valign="top" class="day_date" data-date="2019_09_16">
+        
+          Mon Sep 16, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168434" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168434&amp;include_contexts=course_87054">Class 2: Getting Data</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Sep 16 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Sep 16 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326738" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326738">Quiz 1: Logical expressions</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Sep 16 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326744" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326744">Assignment 1: Python practice</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Sep 16 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_09_23">
+      <td scope="row" valign="top" class="day_date" data-date="2019_09_23">
+        
+          Mon Sep 23, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168445" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168445&amp;include_contexts=course_87054">Class 3: Numpy</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Sep 23 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Sep 23 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326737" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326737">Quiz 2: Requests/XML/JSON</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Sep 23 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326745" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326745">Assignment 2: Google APIs</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Sep 23 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_09_30">
+      <td scope="row" valign="top" class="day_date" data-date="2019_09_30">
+        
+          Mon Sep 30, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168439" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168439&amp;include_contexts=course_87054">Class  4: Pandas</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Sep 30 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Sep 30 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326733" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326733">Quiz 3: Web scraping</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Sep 30 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326746" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326746">Assignment 3: Web scraping</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Sep 30 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_10_07">
+      <td scope="row" valign="top" class="day_date" data-date="2019_10_07">
+        
+          Mon Oct 7, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168432" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168432&amp;include_contexts=course_87054">Class 5: Data Preprocessing &amp; Visualization</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Oct 7 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Oct 7 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326735" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326735">Quiz 4: Numpy</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 7 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326748" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326748">Assignment 4: Pandas basics</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 7 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326747" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326747">Assignment 4b: Numpy and Pandas practice</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 7 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_10_11">
+      <td scope="row" valign="top" class="day_date" data-date="2019_10_11">
+        
+          Fri Oct 11, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_assignment related-assignment_326755" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326755">Join a project group  </a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 11 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_10_14">
+      <td scope="row" valign="top" class="day_date" data-date="2019_10_14">
+        
+          Mon Oct 14, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168431" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168431&amp;include_contexts=course_87054">Class 6: Text Mining</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Oct 14 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Oct 14 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326732" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326732">Quiz 5: pandas</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 14 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326749" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326749">Assignment 5: Data Visualization</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 14 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_10_16">
+      <td scope="row" valign="top" class="day_date" data-date="2019_10_16">
+        
+          Wed Oct 16, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_assignment related-assignment_326754" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326754">Identify a Dataset</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 16 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_10_18">
+      <td scope="row" valign="top" class="day_date" data-date="2019_10_18">
+        
+          Fri Oct 18, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_assignment related-assignment_326756" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326756">MIDTERM EXAM location TBA</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 18 at 8:40am"> 8:40am</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_10_21">
+      <td scope="row" valign="top" class="day_date" data-date="2019_10_21">
+        
+          Mon Oct 21, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168438" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168438&amp;include_contexts=course_87054">Class 7: Text Mining (contd)</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Oct 21 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Oct 21 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326736" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326736">Quiz 6: Data Visualization</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 21 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_10_28">
+      <td scope="row" valign="top" class="day_date" data-date="2019_10_28">
+        
+          Mon Oct 28, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168430" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168430&amp;include_contexts=course_87054">Class 8: Networks</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Oct 28 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Oct 28 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326739" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326739">Quiz 7: Text Mining</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 28 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326750" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326750">Assignment 6: Text Mining</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Oct 28 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_11_04">
+      <td scope="row" valign="top" class="day_date" data-date="2019_11_04">
+        
+          Mon Nov 4, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_169042" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=169042&amp;include_contexts=course_87054">Holiday</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Nov 4 at 12am">12am</span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_11_11">
+      <td scope="row" valign="top" class="day_date" data-date="2019_11_11">
+        
+          Mon Nov 11, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168437" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168437&amp;include_contexts=course_87054">Class 9: Machine Learning</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Nov 11 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Nov 11 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326734" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326734">Quiz 8: Networks</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Nov 11 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326751" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326751">Assignment 7: Networks</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Nov 11 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_11_18">
+      <td scope="row" valign="top" class="day_date" data-date="2019_11_18">
+        
+          Mon Nov 18, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168435" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name not_last">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168435&amp;include_contexts=course_87054">Class 10: Machine Learning 2</a>
+              
+              
+            </td>
+            <td class="dates not_last">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Nov 18 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Nov 18 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+          <tr class="syllabus_assignment related-assignment_326742" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326742">Quiz 9: Machine Learning</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Nov 18 at 11:10am">11:10am</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_11_21">
+      <td scope="row" valign="top" class="day_date" data-date="2019_11_21">
+        
+          Thu Nov 21, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_assignment related-assignment_326757" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326757">Pick a name for your project</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Nov 21 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_11_25">
+      <td scope="row" valign="top" class="day_date" data-date="2019_11_25">
+        
+          Mon Nov 25, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168444" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168444&amp;include_contexts=course_87054">Class 11: Review Session</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Nov 25 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Nov 25 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_12_02">
+      <td scope="row" valign="top" class="day_date" data-date="2019_12_02">
+        
+          Mon Dec 2, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168443" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168443&amp;include_contexts=course_87054">Class 12: Project Presentations (contd.)</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Dec 2 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Dec 2 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_12_09">
+      <td scope="row" valign="top" class="day_date" data-date="2019_12_09">
+        
+          Mon Dec 9, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_168441" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=168441&amp;include_contexts=course_87054">Class 13: Project Presentations (contd.)</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Dec 9 at 8:40am"> 8:40am</span>
+                  
+                    to
+                    <span data-tooltip="" data-html-tooltip-title="Dec 9 at 11:10am">
+                      
+                        11:10am
+                      
+                   </span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_12_13">
+      <td scope="row" valign="top" class="day_date" data-date="2019_12_13">
+        
+          Fri Dec 13, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_event related-event_169044" data-workflow-state="active">
+            <td class="icon">
+              
+                <span class="screenreader-only">Calendar Event</span>
+                <i role="presentation" class="icon-calendar-month"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/calendar?event_id=169044&amp;include_contexts=course_87054">Final Exam TBA</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  <span data-tooltip="" data-html-tooltip-title="Dec 13 at 12am">12am</span>
+                  
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+    <tr class="date events_2019_12_16">
+      <td scope="row" valign="top" class="day_date" data-date="2019_12_16">
+        
+          Mon Dec 16, 2019
+        
+      </td>
+      <td class="details">
+        <table class="detail_list">
+          
+          <tbody><tr class="syllabus_assignment related-assignment_326753" data-workflow-state="published">
+            <td class="icon">
+              
+                <span class="screenreader-only">Assignment</span>
+                <i role="presentation" class="icon-assignment"></i>
+              
+            </td>
+            <td class="name">
+              
+                <a href="https://courseworks2.columbia.edu/courses/87054/assignments/326753">Final Project Deliverables</a>
+              
+              
+            </td>
+            <td class="dates">
+              
+                
+                  due by <span data-tooltip="" data-html-tooltip-title="Dec 16 at 11:59pm">11:59pm</span>
+                
+              
+            </td>
+          </tr>
+          
+        </tbody></table>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+
+</div>
+<div id="wizard_box"></div>
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+              <div id="course_show_secondary">
+
+      <div class="course-options">
+        
+
+          <a class="btn button-sidebar-wide" href="https://courseworks2.columbia.edu/courses/87054?view=feed">
+            <i class="icon-stats"></i>
+            View Course Stream
+          </a>
+
+
+
+
+      </div>
+
+
+      <a class="btn button-sidebar-wide" href="https://courseworks2.columbia.edu/calendar?include_contexts=course_87054">
+        <i class="icon-calendar-day"></i>
+        View Course Calendar
+      </a>
+
+      <div class="todo-list Sidebar__TodoListContainer"><div><h2 class="todo-list-header"><span tabindex="-1">To Do</span></h2><ul id="planner-todosidebar-item-list" class="MYpOQ_bGBk tTloz_bGBk tTloz_fLbg undefined" data-cid="List" style="margin: 0px;"><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_fLbg dxCCp_ycrn dxCCp_cfzP" data-cid="ListItem"><div class="ToDoSidebarItem"><svg label="Assignment" name="IconAssignment" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_eXrk cGqzL_bGBk cGqzL_owrh ToDoSidebarItem__Icon" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M1903.483 807.19c22.023 22.023 22.023 57.712 0 79.848l-677.638 677.637c-10.616 10.504-24.96 16.49-39.98 16.49h-225.88c-31.17 0-56.469-25.299-56.469-56.47v-225.88c0-15.02 5.986-29.364 16.49-39.867l677.636-677.637c22.137-22.136 57.825-22.136 79.962 0l225.879 225.879zM1668.23 962.482l115.424-115.424-146.031-146.031-115.424 115.424 146.03 146.03zm-505.744 505.743l425.895-425.895-146.03-146.03-425.895 425.894v146.031h146.03zM0 0h1468.214v564.698h-112.94V112.94H112.94v1694.092h1242.334v-225.879h112.94v338.819H0V0zm338.819 790.588V338.83h790.576v451.758H338.82zm112.94-112.94h564.697V451.77H451.758v225.88zm-112.94 451.758v-112.94h564.697v112.94H338.82zm0 225.88v-112.94h338.818v112.94H338.82z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg><div class="ToDoSidebarItem__Info"><div class="ToDoSidebarItem__Title"><a href="https://courseworks2.columbia.edu/courses/87054/assignments/326743" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_brAJ eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS" data-cid="Button" style="margin: 0px; cursor: pointer; --eHiXd-mediumHeight:normal; --eHiXd-mediumPadding:0;"><span class="eHiXd_caGd"><span class="cjUyb_bGBk cjUyb_doqw cjUyb_fNIu cjUyb_eQnG">Assignment 0: Software installation</span></span></a></div><span class="cjUyb_bGBk cjUyb_doqw cjUyb_bdMA cjUyb_fNIu cjUyb_eQnG cjUyb_bLsb"></span><ul class="MYpOQ_bGBk tTloz_bGBk tTloz_eXrk undefined" data-cid="List" style="margin: 0px;"><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">Sep 9 at 8:40am<span class="dxCCp_eLRq" aria-hidden="true"></span></li></ul></div><div class="ToDoSidebarItem__Close"><span class="ejhDx_bGBk ejhDx_doBn ejhDx_coHh" data-cid="CloseButton"><button type="button" tabindex="0" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_dnnz eHiXd_doqw eHiXd_bPzo eHiXd_cuTS eHiXd_wWyq" data-cid="Button" style="margin: 0px; cursor: pointer;"><span class="eHiXd_caGd"><span class="eHiXd_eoCh"><svg name="IconX" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_cRbP cGqzL_bGBk" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M771.548 960.11L319 1412.658l188.562 188.562 452.548-452.548 452.548 452.548 188.562-188.562-452.548-452.548 452.548-452.548L1412.658 319 960.11 771.548 507.562 319 319 507.562z" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg></span><span class="fdaJD_bGBk">Dismiss Assignment 0: Software installation</span></span></button></span></div></div></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_fLbg dxCCp_ycrn dxCCp_cfzP" data-cid="ListItem"><div class="ToDoSidebarItem"><svg label="Calendar Event" name="IconCalendarMonth" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_eXrk cGqzL_bGBk ToDoSidebarItem__Icon" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M1637.706 112.941c93.403 0 169.412 76.01 169.412 169.412V1920H113V282.353c0-93.402 76.009-169.412 169.412-169.412h169.41v-56.47c0-31.172 25.3-56.47 56.472-56.47s56.47 25.298 56.47 56.47v56.47h790.589v-56.47c0-31.172 25.299-56.47 56.47-56.47 31.172 0 56.47 25.298 56.47 56.47v56.47h169.413zm56.47 338.824V282.353c0-31.172-25.411-56.47-56.47-56.47h-169.412v56.47c0 31.172-25.3 56.471-56.47 56.471-31.172 0-56.471-25.299-56.471-56.47v-56.472H564.765v56.471c0 31.172-25.3 56.471-56.471 56.471-31.171 0-56.471-25.299-56.471-56.47v-56.472H282.412c-31.06 0-56.47 25.3-56.47 56.471v169.412h1468.234zM225.942 1807.058h1468.234V564.705H225.942v1242.353zm112.94-677.646V790.588h338.824v338.824H338.882zm112.942-112.941h112.941V903.53H451.824v112.941zm338.823 112.941V790.588h338.824v338.824H790.647zm112.941-112.941h112.941V903.53H903.588v112.941zm338.824 112.941V790.588h338.823v338.824h-338.823zm112.941-112.941h112.941V903.53h-112.941v112.941zM338.882 1581.177v-338.824h338.824v338.824H338.882zm112.942-112.942h112.941v-112.941H451.824v112.941zm338.823 112.942v-338.824h338.824v338.824H790.647zm112.941-112.942h112.941v-112.941H903.588v112.941zm338.824 112.942v-338.824h338.823v338.824h-338.823zm112.941-112.942h112.941v-112.941h-112.941v112.941z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg><div class="ToDoSidebarItem__Info"><div class="ToDoSidebarItem__Title"><a href="https://courseworks2.columbia.edu/calendar?event_id=168433&amp;include_contexts=course_87054" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_brAJ eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS" data-cid="Button" style="margin: 0px; cursor: pointer; --eHiXd-mediumHeight:normal; --eHiXd-mediumPadding:0;"><span class="eHiXd_caGd"><span class="cjUyb_bGBk cjUyb_doqw cjUyb_fNIu cjUyb_eQnG">Class 1: Crash Course in Python</span></span></a></div><span class="cjUyb_bGBk cjUyb_doqw cjUyb_bdMA cjUyb_fNIu cjUyb_eQnG cjUyb_bLsb"></span><ul class="MYpOQ_bGBk tTloz_bGBk tTloz_eXrk undefined" data-cid="List" style="margin: 0px;"><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">Sep 9 at 8:40am<span class="dxCCp_eLRq" aria-hidden="true"></span></li></ul></div><div class="ToDoSidebarItem__Close"><span class="ejhDx_bGBk ejhDx_doBn ejhDx_coHh" data-cid="CloseButton"><button type="button" tabindex="0" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_dnnz eHiXd_doqw eHiXd_bPzo eHiXd_cuTS eHiXd_wWyq" data-cid="Button" style="margin: 0px; cursor: pointer;"><span class="eHiXd_caGd"><span class="eHiXd_eoCh"><svg name="IconX" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_cRbP cGqzL_bGBk" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M771.548 960.11L319 1412.658l188.562 188.562 452.548-452.548 452.548 452.548 188.562-188.562-452.548-452.548 452.548-452.548L1412.658 319 960.11 771.548 507.562 319 319 507.562z" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg></span><span class="fdaJD_bGBk">Dismiss Class 1: Crash Course in Python</span></span></button></span></div></div></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_fLbg dxCCp_ycrn dxCCp_cfzP" data-cid="ListItem"><div class="ToDoSidebarItem"><svg label="Calendar Event" name="IconCalendarMonth" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_eXrk cGqzL_bGBk ToDoSidebarItem__Icon" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M1637.706 112.941c93.403 0 169.412 76.01 169.412 169.412V1920H113V282.353c0-93.402 76.009-169.412 169.412-169.412h169.41v-56.47c0-31.172 25.3-56.47 56.472-56.47s56.47 25.298 56.47 56.47v56.47h790.589v-56.47c0-31.172 25.299-56.47 56.47-56.47 31.172 0 56.47 25.298 56.47 56.47v56.47h169.413zm56.47 338.824V282.353c0-31.172-25.411-56.47-56.47-56.47h-169.412v56.47c0 31.172-25.3 56.471-56.47 56.471-31.172 0-56.471-25.299-56.471-56.47v-56.472H564.765v56.471c0 31.172-25.3 56.471-56.471 56.471-31.171 0-56.471-25.299-56.471-56.47v-56.472H282.412c-31.06 0-56.47 25.3-56.47 56.471v169.412h1468.234zM225.942 1807.058h1468.234V564.705H225.942v1242.353zm112.94-677.646V790.588h338.824v338.824H338.882zm112.942-112.941h112.941V903.53H451.824v112.941zm338.823 112.941V790.588h338.824v338.824H790.647zm112.941-112.941h112.941V903.53H903.588v112.941zm338.824 112.941V790.588h338.823v338.824h-338.823zm112.941-112.941h112.941V903.53h-112.941v112.941zM338.882 1581.177v-338.824h338.824v338.824H338.882zm112.942-112.942h112.941v-112.941H451.824v112.941zm338.823 112.942v-338.824h338.824v338.824H790.647zm112.941-112.942h112.941v-112.941H903.588v112.941zm338.824 112.942v-338.824h338.823v338.824h-338.823zm112.941-112.942h112.941v-112.941h-112.941v112.941z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg><div class="ToDoSidebarItem__Info"><div class="ToDoSidebarItem__Title"><a href="https://courseworks2.columbia.edu/calendar?event_id=168434&amp;include_contexts=course_87054" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_brAJ eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS" data-cid="Button" style="margin: 0px; cursor: pointer; --eHiXd-mediumHeight:normal; --eHiXd-mediumPadding:0;"><span class="eHiXd_caGd"><span class="cjUyb_bGBk cjUyb_doqw cjUyb_fNIu cjUyb_eQnG">Class 2: Getting Data</span></span></a></div><span class="cjUyb_bGBk cjUyb_doqw cjUyb_bdMA cjUyb_fNIu cjUyb_eQnG cjUyb_bLsb"></span><ul class="MYpOQ_bGBk tTloz_bGBk tTloz_eXrk undefined" data-cid="List" style="margin: 0px;"><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">Sep 16 at 8:40am<span class="dxCCp_eLRq" aria-hidden="true"></span></li></ul></div><div class="ToDoSidebarItem__Close"><span class="ejhDx_bGBk ejhDx_doBn ejhDx_coHh" data-cid="CloseButton"><button type="button" tabindex="0" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_dnnz eHiXd_doqw eHiXd_bPzo eHiXd_cuTS eHiXd_wWyq" data-cid="Button" style="margin: 0px; cursor: pointer;"><span class="eHiXd_caGd"><span class="eHiXd_eoCh"><svg name="IconX" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_cRbP cGqzL_bGBk" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M771.548 960.11L319 1412.658l188.562 188.562 452.548-452.548 452.548 452.548 188.562-188.562-452.548-452.548 452.548-452.548L1412.658 319 960.11 771.548 507.562 319 319 507.562z" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg></span><span class="fdaJD_bGBk">Dismiss Class 2: Getting Data</span></span></button></span></div></div></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_fLbg dxCCp_ycrn dxCCp_cfzP" data-cid="ListItem"><div class="ToDoSidebarItem"><svg label="Quiz" name="IconQuiz" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_eXrk cGqzL_bGBk cGqzL_owrh ToDoSidebarItem__Icon" data-cid="InlineSVG SVGIcon"><g role="presentation"><g fill-rule="evenodd" stroke="none" stroke-width="1"><path d="M0 1549.71l414.504-414.503 80.598 80.598-414.504 414.504L0 1549.71zm580.351-248.782l80.598 80.598-331.626 331.626-80.598-80.598 331.626-331.626zm-82.844 414.584l248.748-248.748 80.484 80.712-248.748 248.634-80.484-80.598zm1376.38-1601.848c1.823 3.648 180.005 372.438-176.587 729.03l-146.604 146.604-2.622 665.874-222.642 222.642-331.626-331.512-30.552-30.552-9.804-9.804-537.738-537.738-331.626-331.74 222.642-222.642 665.874-2.508L1119.32 264.6c356.478-356.478 725.268-178.296 729.03-176.472l17.1 8.436 8.436 17.1zm-439.585 1494.084l1.938-503.994-361.836 361.95 251.028 250.914 108.87-108.87zm-1189.02-971.28L496.31 887.61l361.836-361.836-503.994 1.824-108.87 108.87zm1371.42 125.628c256.956-256.956 187.986-511.176 162.564-579.69-69.084-25.992-321.366-95.304-579.348 162.792l-623.01 623.01 416.898 416.898 622.896-623.01z"></path><path d="M1534.987 372.558c-51.072-1.368-131.67 12.768-213.294 94.392l-40.47 40.356 173.394 173.28 40.356-40.242c82.194-82.308 96.9-161.31 94.848-213.18l-2.166-52.554-52.668-2.052z"></path></g></g></svg><div class="ToDoSidebarItem__Info"><div class="ToDoSidebarItem__Title"><a href="https://courseworks2.columbia.edu/courses/87054/quizzes/40053" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_brAJ eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS" data-cid="Button" style="margin: 0px; cursor: pointer; --eHiXd-mediumHeight:normal; --eHiXd-mediumPadding:0;"><span class="eHiXd_caGd"><span class="cjUyb_bGBk cjUyb_doqw cjUyb_fNIu cjUyb_eQnG">Quiz 1: Logical expressions</span></span></a></div><span class="cjUyb_bGBk cjUyb_doqw cjUyb_bdMA cjUyb_fNIu cjUyb_eQnG cjUyb_bLsb"></span><ul class="MYpOQ_bGBk tTloz_bGBk tTloz_eXrk undefined" data-cid="List" style="margin: 0px;"><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">10 points<span class="dxCCp_eLRq" aria-hidden="true"></span></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">Sep 16 at 11:10am<span class="dxCCp_eLRq" aria-hidden="true"></span></li></ul></div><div class="ToDoSidebarItem__Close"><span class="ejhDx_bGBk ejhDx_doBn ejhDx_coHh" data-cid="CloseButton"><button type="button" tabindex="0" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_dnnz eHiXd_doqw eHiXd_bPzo eHiXd_cuTS eHiXd_wWyq" data-cid="Button" style="margin: 0px; cursor: pointer;"><span class="eHiXd_caGd"><span class="eHiXd_eoCh"><svg name="IconX" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_cRbP cGqzL_bGBk" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M771.548 960.11L319 1412.658l188.562 188.562 452.548-452.548 452.548 452.548 188.562-188.562-452.548-452.548 452.548-452.548L1412.658 319 960.11 771.548 507.562 319 319 507.562z" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg></span><span class="fdaJD_bGBk">Dismiss Quiz 1: Logical expressions</span></span></button></span></div></div></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_fLbg dxCCp_ycrn dxCCp_cfzP" data-cid="ListItem"><div class="ToDoSidebarItem"><svg label="Assignment" name="IconAssignment" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_eXrk cGqzL_bGBk cGqzL_owrh ToDoSidebarItem__Icon" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M1903.483 807.19c22.023 22.023 22.023 57.712 0 79.848l-677.638 677.637c-10.616 10.504-24.96 16.49-39.98 16.49h-225.88c-31.17 0-56.469-25.299-56.469-56.47v-225.88c0-15.02 5.986-29.364 16.49-39.867l677.636-677.637c22.137-22.136 57.825-22.136 79.962 0l225.879 225.879zM1668.23 962.482l115.424-115.424-146.031-146.031-115.424 115.424 146.03 146.03zm-505.744 505.743l425.895-425.895-146.03-146.03-425.895 425.894v146.031h146.03zM0 0h1468.214v564.698h-112.94V112.94H112.94v1694.092h1242.334v-225.879h112.94v338.819H0V0zm338.819 790.588V338.83h790.576v451.758H338.82zm112.94-112.94h564.697V451.77H451.758v225.88zm-112.94 451.758v-112.94h564.697v112.94H338.82zm0 225.88v-112.94h338.818v112.94H338.82z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg><div class="ToDoSidebarItem__Info"><div class="ToDoSidebarItem__Title"><a href="https://courseworks2.columbia.edu/courses/87054/assignments/326744" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_brAJ eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS" data-cid="Button" style="margin: 0px; cursor: pointer; --eHiXd-mediumHeight:normal; --eHiXd-mediumPadding:0;"><span class="eHiXd_caGd"><span class="cjUyb_bGBk cjUyb_doqw cjUyb_fNIu cjUyb_eQnG">Assignment 1: Python practice</span></span></a></div><span class="cjUyb_bGBk cjUyb_doqw cjUyb_bdMA cjUyb_fNIu cjUyb_eQnG cjUyb_bLsb"></span><ul class="MYpOQ_bGBk tTloz_bGBk tTloz_eXrk undefined" data-cid="List" style="margin: 0px;"><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">100 points<span class="dxCCp_eLRq" aria-hidden="true"></span></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">Sep 16 at 11:59pm<span class="dxCCp_eLRq" aria-hidden="true"></span></li></ul></div><div class="ToDoSidebarItem__Close"><span class="ejhDx_bGBk ejhDx_doBn ejhDx_coHh" data-cid="CloseButton"><button type="button" tabindex="0" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_dnnz eHiXd_doqw eHiXd_bPzo eHiXd_cuTS eHiXd_wWyq" data-cid="Button" style="margin: 0px; cursor: pointer;"><span class="eHiXd_caGd"><span class="eHiXd_eoCh"><svg name="IconX" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_cRbP cGqzL_bGBk" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M771.548 960.11L319 1412.658l188.562 188.562 452.548-452.548 452.548 452.548 188.562-188.562-452.548-452.548 452.548-452.548L1412.658 319 960.11 771.548 507.562 319 319 507.562z" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg></span><span class="fdaJD_bGBk">Dismiss Assignment 1: Python practice</span></span></button></span></div></div></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_fLbg dxCCp_ycrn dxCCp_cfzP" data-cid="ListItem"><div class="ToDoSidebarItem"><svg label="Calendar Event" name="IconCalendarMonth" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_eXrk cGqzL_bGBk ToDoSidebarItem__Icon" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M1637.706 112.941c93.403 0 169.412 76.01 169.412 169.412V1920H113V282.353c0-93.402 76.009-169.412 169.412-169.412h169.41v-56.47c0-31.172 25.3-56.47 56.472-56.47s56.47 25.298 56.47 56.47v56.47h790.589v-56.47c0-31.172 25.299-56.47 56.47-56.47 31.172 0 56.47 25.298 56.47 56.47v56.47h169.413zm56.47 338.824V282.353c0-31.172-25.411-56.47-56.47-56.47h-169.412v56.47c0 31.172-25.3 56.471-56.47 56.471-31.172 0-56.471-25.299-56.471-56.47v-56.472H564.765v56.471c0 31.172-25.3 56.471-56.471 56.471-31.171 0-56.471-25.299-56.471-56.47v-56.472H282.412c-31.06 0-56.47 25.3-56.47 56.471v169.412h1468.234zM225.942 1807.058h1468.234V564.705H225.942v1242.353zm112.94-677.646V790.588h338.824v338.824H338.882zm112.942-112.941h112.941V903.53H451.824v112.941zm338.823 112.941V790.588h338.824v338.824H790.647zm112.941-112.941h112.941V903.53H903.588v112.941zm338.824 112.941V790.588h338.823v338.824h-338.823zm112.941-112.941h112.941V903.53h-112.941v112.941zM338.882 1581.177v-338.824h338.824v338.824H338.882zm112.942-112.942h112.941v-112.941H451.824v112.941zm338.823 112.942v-338.824h338.824v338.824H790.647zm112.941-112.942h112.941v-112.941H903.588v112.941zm338.824 112.942v-338.824h338.823v338.824h-338.823zm112.941-112.942h112.941v-112.941h-112.941v112.941z" fill-rule="evenodd" stroke="none" stroke-width="1"></path></g></svg><div class="ToDoSidebarItem__Info"><div class="ToDoSidebarItem__Title"><a href="https://courseworks2.columbia.edu/calendar?event_id=168445&amp;include_contexts=course_87054" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_brAJ eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS" data-cid="Button" style="margin: 0px; cursor: pointer; --eHiXd-mediumHeight:normal; --eHiXd-mediumPadding:0;"><span class="eHiXd_caGd"><span class="cjUyb_bGBk cjUyb_doqw cjUyb_fNIu cjUyb_eQnG">Class 3: Numpy</span></span></a></div><span class="cjUyb_bGBk cjUyb_doqw cjUyb_bdMA cjUyb_fNIu cjUyb_eQnG cjUyb_bLsb"></span><ul class="MYpOQ_bGBk tTloz_bGBk tTloz_eXrk undefined" data-cid="List" style="margin: 0px;"><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">Sep 23 at 8:40am<span class="dxCCp_eLRq" aria-hidden="true"></span></li></ul></div><div class="ToDoSidebarItem__Close"><span class="ejhDx_bGBk ejhDx_doBn ejhDx_coHh" data-cid="CloseButton"><button type="button" tabindex="0" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_dnnz eHiXd_doqw eHiXd_bPzo eHiXd_cuTS eHiXd_wWyq" data-cid="Button" style="margin: 0px; cursor: pointer;"><span class="eHiXd_caGd"><span class="eHiXd_eoCh"><svg name="IconX" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_cRbP cGqzL_bGBk" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M771.548 960.11L319 1412.658l188.562 188.562 452.548-452.548 452.548 452.548 188.562-188.562-452.548-452.548 452.548-452.548L1412.658 319 960.11 771.548 507.562 319 319 507.562z" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg></span><span class="fdaJD_bGBk">Dismiss Class 3: Numpy</span></span></button></span></div></div></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_fLbg dxCCp_ycrn dxCCp_cfzP" data-cid="ListItem"><div class="ToDoSidebarItem"><svg label="Quiz" name="IconQuiz" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_eXrk cGqzL_bGBk cGqzL_owrh ToDoSidebarItem__Icon" data-cid="InlineSVG SVGIcon"><g role="presentation"><g fill-rule="evenodd" stroke="none" stroke-width="1"><path d="M0 1549.71l414.504-414.503 80.598 80.598-414.504 414.504L0 1549.71zm580.351-248.782l80.598 80.598-331.626 331.626-80.598-80.598 331.626-331.626zm-82.844 414.584l248.748-248.748 80.484 80.712-248.748 248.634-80.484-80.598zm1376.38-1601.848c1.823 3.648 180.005 372.438-176.587 729.03l-146.604 146.604-2.622 665.874-222.642 222.642-331.626-331.512-30.552-30.552-9.804-9.804-537.738-537.738-331.626-331.74 222.642-222.642 665.874-2.508L1119.32 264.6c356.478-356.478 725.268-178.296 729.03-176.472l17.1 8.436 8.436 17.1zm-439.585 1494.084l1.938-503.994-361.836 361.95 251.028 250.914 108.87-108.87zm-1189.02-971.28L496.31 887.61l361.836-361.836-503.994 1.824-108.87 108.87zm1371.42 125.628c256.956-256.956 187.986-511.176 162.564-579.69-69.084-25.992-321.366-95.304-579.348 162.792l-623.01 623.01 416.898 416.898 622.896-623.01z"></path><path d="M1534.987 372.558c-51.072-1.368-131.67 12.768-213.294 94.392l-40.47 40.356 173.394 173.28 40.356-40.242c82.194-82.308 96.9-161.31 94.848-213.18l-2.166-52.554-52.668-2.052z"></path></g></g></svg><div class="ToDoSidebarItem__Info"><div class="ToDoSidebarItem__Title"><a href="https://courseworks2.columbia.edu/courses/87054/quizzes/40052" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_brAJ eHiXd_ycrn eHiXd_bNlk eHiXd_cuTS" data-cid="Button" style="margin: 0px; cursor: pointer; --eHiXd-mediumHeight:normal; --eHiXd-mediumPadding:0;"><span class="eHiXd_caGd"><span class="cjUyb_bGBk cjUyb_doqw cjUyb_fNIu cjUyb_eQnG">Quiz 2: Requests/XML/JSON</span></span></a></div><span class="cjUyb_bGBk cjUyb_doqw cjUyb_bdMA cjUyb_fNIu cjUyb_eQnG cjUyb_bLsb"></span><ul class="MYpOQ_bGBk tTloz_bGBk tTloz_eXrk undefined" data-cid="List" style="margin: 0px;"><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">10 points<span class="dxCCp_eLRq" aria-hidden="true"></span></li><li class="MYpOQ_bGBk dxCCp_bGBk dxCCp_eXrk dxCCp_doqw dxCCp_dnHs" data-cid="ListItem">Sep 23 at 11:10am<span class="dxCCp_eLRq" aria-hidden="true"></span></li></ul></div><div class="ToDoSidebarItem__Close"><span class="ejhDx_bGBk ejhDx_doBn ejhDx_coHh" data-cid="CloseButton"><button type="button" tabindex="0" class="MYpOQ_bGBk eHiXd_bGBk eHiXd_dnnz eHiXd_doqw eHiXd_bPzo eHiXd_cuTS eHiXd_wWyq" data-cid="Button" style="margin: 0px; cursor: pointer;"><span class="eHiXd_caGd"><span class="eHiXd_eoCh"><svg name="IconX" viewBox="0 0 1920 1920" rotate="0" width="1em" height="1em" aria-hidden="true" role="presentation" focusable="false" class="esvoZ_bGBk esvoZ_drOs esvoZ_cRbP cGqzL_bGBk" data-cid="InlineSVG SVGIcon"><g role="presentation"><path d="M771.548 960.11L319 1412.658l188.562 188.562 452.548-452.548 452.548 452.548 188.562-188.562-452.548-452.548 452.548-452.548L1412.658 319 960.11 771.548 507.562 319 319 507.562z" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg></span><span class="fdaJD_bGBk">Dismiss Quiz 2: Requests/XML/JSON</span></span></button></span></div></div></li></ul></div></div>
+
+    
+
+    
+  </div>
+    
+<div id="sidebar_content">
+  
+<div class="mini_month">
+  <div class="mini-cal-header">
+    <button class="prev_month_link Button Button--icon-action"><i class="icon-arrow-open-left"></i><span class="screenreader-only">Prev month</span></button>
+    <button class="next_month_link Button Button--icon-action"><i class="icon-arrow-open-right"></i><span class="screenreader-only">Next month</span></button>
+    <span class="mini-cal-month-and-year">
+      <span class="month_name">September</span>
+      <span class="year_number">2019</span>
+    </span>
+  </div>
+  <div style="display: none;">
+    <span class="month_number">9</span>
+  </div>
+  <table class="mini_calendar" cellspacing="0">
+    <caption class="screenreader-only">Calendar</caption>
+    <thead>
+      <tr>
+          <th scope="col">
+            <span class="screenreader-only">
+              Sunday
+            </span>
+          </th>
+          <th scope="col">
+            <span class="screenreader-only">
+              Monday
+            </span>
+          </th>
+          <th scope="col">
+            <span class="screenreader-only">
+              Tuesday
+            </span>
+          </th>
+          <th scope="col">
+            <span class="screenreader-only">
+              Wednesday
+            </span>
+          </th>
+          <th scope="col">
+            <span class="screenreader-only">
+              Thursday
+            </span>
+          </th>
+          <th scope="col">
+            <span class="screenreader-only">
+              Friday
+            </span>
+          </th>
+          <th scope="col">
+            <span class="screenreader-only">
+              Saturday
+            </span>
+          </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="mini_calendar_week">
+          <td id="mini_day_2019_08_25" class="mini_calendar_day day other_month previous_month date_08_25_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                25
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_08_26" class="mini_calendar_day day other_month previous_month date_08_26_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                26
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_08_27" class="mini_calendar_day day other_month previous_month date_08_27_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                27
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_08_28" class="mini_calendar_day day other_month previous_month date_08_28_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                28
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_08_29" class="mini_calendar_day day other_month previous_month date_08_29_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                29
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_08_30" class="mini_calendar_day day other_month previous_month date_08_30_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                30
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_08_31" class="mini_calendar_day day other_month previous_month date_08_31_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                31
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+      </tr>
+      <tr class="mini_calendar_week">
+          <td id="mini_day_2019_09_01" class="mini_calendar_day day current_month date_09_01_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                1
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_02" class="mini_calendar_day day current_month date_09_02_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                2
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_03" class="mini_calendar_day day current_month date_09_03_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                3
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_04" class="mini_calendar_day day current_month date_09_04_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                4
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_05" class="mini_calendar_day day current_month date_09_05_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                5
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_06" class="mini_calendar_day day current_month date_09_06_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                6
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_07" class="mini_calendar_day day current_month date_09_07_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                7
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+      </tr>
+      <tr class="mini_calendar_week">
+          <td id="mini_day_2019_09_08" class="mini_calendar_day day current_month date_09_08_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                8
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_09" class="mini_calendar_day day current_month date_09_09_2019 has_event">
+            <div class="day_wrapper" role="link" tabindex="0">
+              <span class="day_number">
+                9
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_10" class="mini_calendar_day day current_month today date_09_10_2019 related">
+            <div class="day_wrapper">
+              <span class="day_number">
+                10
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_11" class="mini_calendar_day day current_month date_09_11_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                11
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_12" class="mini_calendar_day day current_month date_09_12_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                12
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_13" class="mini_calendar_day day current_month date_09_13_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                13
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_14" class="mini_calendar_day day current_month date_09_14_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                14
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+      </tr>
+      <tr class="mini_calendar_week">
+          <td id="mini_day_2019_09_15" class="mini_calendar_day day current_month date_09_15_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                15
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_16" class="mini_calendar_day day current_month date_09_16_2019 has_event">
+            <div class="day_wrapper" role="link" tabindex="0">
+              <span class="day_number">
+                16
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_17" class="mini_calendar_day day current_month date_09_17_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                17
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_18" class="mini_calendar_day day current_month date_09_18_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                18
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_19" class="mini_calendar_day day current_month date_09_19_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                19
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_20" class="mini_calendar_day day current_month date_09_20_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                20
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_21" class="mini_calendar_day day current_month date_09_21_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                21
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+      </tr>
+      <tr class="mini_calendar_week">
+          <td id="mini_day_2019_09_22" class="mini_calendar_day day current_month date_09_22_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                22
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_23" class="mini_calendar_day day current_month date_09_23_2019 has_event">
+            <div class="day_wrapper" role="link" tabindex="0">
+              <span class="day_number">
+                23
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_24" class="mini_calendar_day day current_month date_09_24_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                24
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_25" class="mini_calendar_day day current_month date_09_25_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                25
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_26" class="mini_calendar_day day current_month date_09_26_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                26
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_27" class="mini_calendar_day day current_month date_09_27_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                27
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_28" class="mini_calendar_day day current_month date_09_28_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                28
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+      </tr>
+      <tr class="mini_calendar_week">
+          <td id="mini_day_2019_09_29" class="mini_calendar_day day current_month date_09_29_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                29
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_09_30" class="mini_calendar_day day current_month date_09_30_2019 has_event">
+            <div class="day_wrapper" role="link" tabindex="0">
+              <span class="day_number">
+                30
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_10_01" class="mini_calendar_day day other_month next_month date_10_01_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                1
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_10_02" class="mini_calendar_day day other_month next_month date_10_02_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                2
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_10_03" class="mini_calendar_day day other_month next_month date_10_03_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                3
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_10_04" class="mini_calendar_day day other_month next_month date_10_04_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                4
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+          <td id="mini_day_2019_10_05" class="mini_calendar_day day other_month next_month date_10_05_2019">
+            <div class="day_wrapper">
+              <span class="day_number">
+                5
+              </span>
+              <span class="screenreader-only previous_month_text">Previous month</span>
+              <span class="screenreader-only next_month_text">Next month</span>
+              <span class="screenreader-only today_text">Today</span>
+              <span class="screenreader-only event_link_text">Click to view event details</span>
+            </div>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    
+<div role="complementary" aria-label="Assignment Weights">
+  <h2>Assignments are weighted by group:</h2>
+
+  <table class="summary">
+    <thead>
+    <tr>
+      <th scope="col">Group</th>
+      <th scope="col">Weight</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th scope="row">Assignments</th>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <th scope="row">Project</th>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <th scope="row">Quizzes</th>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <th scope="row">Exams</th>
+          <td>40%</td>
+        </tr>
+      <tr style="font-weight: bold;">
+        <th scope="row">Total</th>
+        <td>100%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div id="editor_tabs" style="display: none;">
+  <!-- this is just here so canvas-rce knows where to render the sidebar into -->
+</div>
+
+
+    
+<div class="events_list
+  recent_feedback">
+  <div class="h2 shared-space">
+    <h2>Recent Feedback</h2>
+  </div>
+  <ul class="right-side-list events">
+    <li>
+      <small>
+          Nothing for now
+      </small>
+    </li>
+  </ul>
+</div>
+
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script>
+  window.addEventListener('message', function(event) {
+    var iframes = document.getElementsByTagName('iframe'),
+      iframe;
+    for (var i=0, l=iframes.length; i < l; i++) {
+        if (iframes[i].contentWindow === event.source) {
+        iframe = iframes[i];
+        break;
+      }
+    }
+    if (!iframe) {return;}
+
+    var data = JSON.parse(event.data)
+
+    if(data.subject === 'betterchat.is_mini_chat') {
+      event.source.postMessage(
+        JSON.stringify({is_mini_chat: true}
+      ), '*');
+      return;
+    }
+
+    if (data.request_launch_url) {
+      event.source.postMessage(
+        JSON.stringify({launch_url: iframe.getAttribute('data-launch-url')}
+      ), '*');
+      return;
+    }
+
+    if (data.quicklaunch) {
+      event.source.postMessage(
+        JSON.stringify({quicklaunch: {"user_id":432445,"course_id":87054,"canvas_url":"https://canvas.instructure.com","tool_consumer_instance_guid":"7db438071375c02373713c12c73869ff2f470b68.columbiasce.instructure.com"}}
+      ), '*');
+      return;
+    }
+
+    if (!data.width && data.width !== 0) {return;}
+    if (data.width > document.documentElement.clientWidth / 2) {return;}
+    iframe.style.width = data.width+'px';
+    iframe.style.height = data.height+'px';
+    iframe.style.bottom = data.bottom+'px';
+  }, false);
+</script>
+<div data-tool-wrapper-id="9cd39eb0-5a94-4f43-8f1f-96c1493209cd">
+  <iframe data-launch-url="https://courseworks2.columbia.edu/courses/87054/external_tools/382/resource_selection?launch_token=9cd39eb0-5a94-4f43-8f1f-96c1493209cd&amp;launch_type=course_navigation" style="position: fixed; right: 0px; bottom: -470px; width: 300px; height: 500px; border: 1px solid rgb(128, 128, 128); z-index: 100;" src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/mini.html" title="Chat"></iframe>
+</div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">1ffa9cb9-e28e-48c9-9e41-0f6a86f37fe8</div>
+    </div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  <div id="StudentTray__Container"></div>
+  
+
+<script>
+  INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"iad.rtmp.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"Mediathread","id":8836,"url":"https://mediathread.ccnmtl.columbia.edu/lti/","icon_url":"https://ccnmtl-mediathread-static-prod.s3.amazonaws.com/media/img/icons/icon-16.png","canvas_icon_class":null,"width":665,"height":600,"use_tray":false},{"name":"Video Library","id":12497,"url":"https://cvn.hosted.panopto.com/Panopto/Pages/Sessions/embeddedupload.aspx","icon_url":"https://cvn.hosted.panopto.com/Panopto/images/panopto_logo_globe.png","canvas_icon_class":null,"width":900,"height":700,"use_tray":false}]};
+  ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net/br","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/8d25a688e14c77b6e2f4d5941a767a5d/variables-8391c84da435c9cfceea2b2b3317ff66.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/8d25a688e14c77b6e2f4d5941a767a5d/variables-8391c84da435c9cfceea2b2b3317ff66.css","https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-e4ebc469d3.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/default/variables-high_contrast-8391c84da435c9cfceea2b2b3317ff66.css","https://du11hjcvx0uqb.cloudfront.net/br/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-50b1157940.css"],"current_user_id":"432445","current_user_roles":["user","student"],"current_user_disabled_inbox":false,"files_domain":"cluster33.canvas-user-content.com","DOMAIN_ROOT_ACCOUNT_ID":13960000000000001,"k12":false,"use_responsive_layout":false,"use_rce_enhancements":false,"use_unsplash_image_search":true,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://courseworks2.columbia.edu","DEEP_LINKING_LOGGING":null,"SETTINGS":{"open_registration":false,"collapse_global_nav":false,"show_feedback_link":true},"current_user":{"id":"432445","display_name":"Mehmet Uray","avatar_image_url":"https://courseworks2.columbia.edu/images/messages/avatar-50.png","html_url":"https://courseworks2.columbia.edu/about/432445","avatar_is_fallback":true},"page_view_update_url":"/page_views/1ffa9cb9-e28e-48c9-9e41-0f6a86f37fe8?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiMWZmYTljYjktZTI4ZS00OGM5LTllNDEtMGY2YTg2ZjM3ZmU4IiwidSI6MTM5NjAwMDAwMDA0MzI0NDUsImMiOiIyMDE5LTA5LTEwVDIzOjEwOjA4LjUyWiJ9.NboImYVNju6HiyvSEF1ISn8fafvNzK55nO5Qjn5rOAw","context_asset_string":"course_87054","ping_url":"https://courseworks2.columbia.edu/api/v1/courses/87054/ping","TIMEZONE":"America/New_York","CONTEXT_TIMEZONE":"America/New_York","LOCALE":"en","BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","INCOMPLETE_REGISTRATION":null,"USER_EMAIL":"msu2108@columbia.edu","badge_counts":{"submissions":0},"NEW_USER_TUTORIALS":{"is_enabled":false},"STUDENT_PLANNER_ENABLED":true,"DIRECT_SHARE_ENABLED":false,"COURSE":{"id":"87054","pages_url":"https://courseworks2.columbia.edu/courses/87054/pages","front_page_title":null,"default_view":"syllabus"},"RICH_CONTENT_APP_HOST":"rich-content-iad.inscloudgate.net","RICH_CONTENT_SKIP_SIDEBAR":null,"JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSW4wLi4xUU8tOWEydEhfNDRvbV9LLnkxT2liN2J3Z1FyTWNFdGtXMS1nNFViVzdlbnctRk9EdUdnTGNVTTRrdGV5UHYyN0NKeGF3b1FUTWdxdWxyM3E0c0J2TF9PRlkxU0tlNXNaY2ljR3hrdlM3YVpTRkktajRLZjNLVTBLNXFCbEcwRWFwUXEzMVFraEtoSDVEdUNhYXVqcWR3VGRPTWtydzZFQWFNTlhkMTNmVnRHYy12YkI5RUhYaUFPSHREUUNFb0lvTjJCSU5rQWlmNkd6N18waHh1MEFpSXFFNDdGN2JGOUQxdGtDOFJ3aGlhN1M2YmRLQjB5WnQ1NlktU2RwWnl6ZjNFeVhyU21yazctbHpOMXRJZWtldjVmdGdqMGJQZlBIcVp5NVFQa0djYzRvemYxd2JYU1l1VjJXcWJ5YUxoSmJvNjAtZEtqdXVTT2hScHZSQUtrUEpiX3RpX3Z4dDdRRnV1STl1TTBxOUoxa01JZDNIVDM3TXNGU0U1UlJ2ZmJVc1lDLUFfVkRvQVRrWmRkTVJHdTBZZUw2aVlzY19mQzdiWjJoVm5tcGUzWnFUbnpwTWgtOWNMeWp5TU9tZjdSdGlSVUozNEluanhiWC1hNWxLamo4OS1yc2dsRjJMeFRIVVYySFBKUTRWSjdxSlIxbS1WYlhpTmFWYmRDZ1JmX3dudkFJNGNTOU4xejJ0SGdHSWRvTFJ5Y1J6MzhzblhvS25VbzdqLVpsOEZrdm9lSVVicFVjN2VSbXFSSVY3bDRhQVA2cGRPMlpsRTdaV3dSVEVlaG1iSUF3Rjc5TkU1MVhOU0RUQmx3WDBHeWJwdUd5NTFYUmpEbGs4TzRxeU1Ld3Fjc0d6OXpjVV9oaDJWU0RsbUxFaVBFRmdFYW0yaXFKbTRoa2N6ci15ZUxUaWtvamhqTnJLMkVzU0J5eks3TnBlY01tbkJvNW5tSVZxdWxKQUJVbkpHd1QzSzZoSHExb3R2RW53eHNzMXZLdUlNU2tURC16bFZZRkI3OHNmWlpVSU8xY25BRkpsTU9ScVBsaExIRnZWeDRrZl9razdVR1pXMXBkWE1xVVpNTDZQNC0wbGt3TUZ2XzQ3WHlGbEVLMF9RLmduVkJqb0ZYQko4S052YWRKc1o0M1E=","RICH_CONTENT_CAN_UPLOAD_FILES":false,"RICH_CONTENT_FILES_TAB_DISABLED":false,"CAN_READ":true,"SYLLABUS_BODY":"\u003ch2\u003e\u003cspan\u003eContact information\u003c/span\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"font-size: 12pt;\"\u003e\u003cstrong\u003eProfessor\u003c/strong\u003e\u003cspan style=\"font-weight: 400;\"\u003e: Uday Menon (\u003c/span\u003e\u003ca href=\"mailto:hj2203@columbia.edu\"\u003e\u003cspan style=\"font-weight: 400;\"\u003eucm2104@columbia.edu\u003c/span\u003e\u003c/a\u003e\u003cspan style=\"font-weight: 400;\"\u003e)\u003c/span\u003e\u003c/span\u003e\u003cbr\u003e\u003cspan style=\"font-size: 12pt;\"\u003e\u003cstrong\u003eOffice Hours\u003c/strong\u003e\u003cspan style=\"font-weight: 400;\"\u003e: Monday, Wednesday 1 to 2 (or by appointment)\u003cbr\u003e\u003c/span\u003e\u003cstrong\u003eOffice\u003c/strong\u003e: 309 Mudd\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cbr\u003e\u003cspan style=\"font-size: 12pt;\"\u003e\u003cstrong\u003eTAs\u003c/strong\u003e\u003cspan style=\"font-weight: 400;\"\u003e:TBA\u003cbr\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cdiv\u003e\n\u003cdiv\u003e\n\u003cstrong style=\"font-size: 12pt;\"\u003eTA Room\u003c/strong\u003e\u003cspan style=\"font-size: 12pt;\"\u003e : 301 Mudd\u003c/span\u003e\u003cbr\u003e\u003cspan style=\"font-size: 1rem;\"\u003e\u003c/span\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv\u003e\n\u003cbr\u003e\u003cspan style=\"font-weight: 400;\"\u003e\u003cspan style=\"font-size: 10pt;\"\u003e\u003cspan style=\"font-size: 12pt;\"\u003e\u003cstrong\u003eClass hours\u003c/strong\u003e: Monday 8:40 - 11:10AM\u003c/span\u003e\u003cbr\u003e\u003cspan style=\"font-size: 12pt;\"\u003e\u003cstrong\u003eClassroom\u003c/strong\u003e: 1127 Mudd\u003c/span\u003e\u003cbr\u003e\u003cspan style=\"font-size: 12pt;\"\u003e\u003cstrong\u003eDiscussion\u003c/strong\u003e: \u003ca href=\"https://piazza.com/columbia/fall2019/ieore4523_001_2019_3dataanalytics/home\"\u003ehttps://\u003cspan\u003epiazza.com/columbia/fall2019/ieore4523_001_2019_3dataanalytics/home\u003c/span\u003e\u003c/a\u003e\u003c/span\u003e\u003cbr\u003e\u003c/span\u003e\u003c/span\u003e\n\u003c/div\u003e\n\u003ch2\u003e\u003cspan style=\"font-weight: 400;\"\u003eCourse Description\u003c/span\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThe goal of this course is to give you a working knowledge of how to use Python to extract knowledge and information from data. At the end of this course you will be competent in using Python libraries to work with and analyze offline as well as online data. We will (briefly) review the basics of Python programming, cover the rudiments of data cleaning and data analysis, machine learning (regression, decision trees, clustering), deep learning (neural networks) and data visualization packages (numpy, Pandas, Scikit-learn) available in Python. We will examine how we can use Python libraries for extracting value from text (text mining) and understanding the properties of networks (network analysis). \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThe course contains a group project component that will require you to gather, store, and analyze a data set of your choosing. Individual evaluation components include quizzes, assignments, class participation, and  in-class written exams.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThis is an intensive hands on course so be prepared for a lot of work and a significant time commitment. But your reward - proficiency in data analysis skills - will be substantial!\u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cspan style=\"font-weight: 400;\"\u003ePrerequisites\u003c/span\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003ePrior exposure to some programming language is helpful and you should either have taken, or be concurrently registered in, the Tools for Analytics class. \u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cspan style=\"font-weight: 400;\"\u003eEvaluation components\u003c/span\u003e\u003c/h2\u003e\n\u003ch3\u003e\u003cspan style=\"font-weight: 400;\"\u003e1. Assignments\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eAssignment due dates will be posted on the calendar and all assignments will require submission online in the assignments folder. It is your responsibility to check the calendar and keep track of due dates. Assignments turned in later than one minute after the deadline but less than one week after the deadline will automatically be penalized 30%. Assignments turned in more than one week after the deadline will not receive any credit. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"font-weight: 400;\"\u003e2. Project\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThere is no better way to learn something than to go out and use it so start thinking about a data set you’d like to analyze. Final submission will include a brief (1-2 page) design report, Python code, and an in­-class presentation and demonstration. It is important that  your focus should not be only on the analysis but also on the presentation of your work and the results in an easy to understand manner.\u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"font-weight: 400;\"\u003e3. Quizzes\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThere will be several short quizzes - in class and online. The purpose of the quizzes is to quickly check recall (and, indirectly, to make sure you come to class!) so you're not really expected to prepare for them. \u003c/span\u003e\u003c/p\u003e\n\u003ch3\u003e\u003cspan style=\"font-weight: 400;\"\u003e3. Exams\u003c/span\u003e\u003c/h3\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eWe will have two in-class written exams - a midterm and a final that will be weighted 1:2 for a total of 40% of the grade. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003e \u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cspan style=\"font-weight: 400;\"\u003eComputers in class\u003c/span\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eComputers are a requirement for this course and you are expected to bring one for every class. We’ll do a lot of programming - the best way to learn is to see something in action and Python is an especially good language for making things happen. Make sure that your laptops have sufficient charge for the class! \u003c/span\u003e\u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eMac vs Windows\u003c/strong\u003e\u003cspan style=\"font-weight: 400;\"\u003e: Either is fine but, if you have the choice, then please use a Mac. It is much easier to install needed libraries on a Mac than it is on a Windows machine. In particular, if you have a Mac and are using some sort of Windows emulator then please use Mac OS-X and not the Windows emulator. The double redirection will make everything a lot slower. But, either Mac or Windows will work so don’t worry if you’re a Windows user. \u003c/span\u003e\u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003ePython2 versus. Python3\u003c/strong\u003e\u003cspan style=\"font-weight: 400;\"\u003e. Unfortunately, there are two versions of Python and they aren’t compatible. We’ll be using Python3 (current version: 3.7) mainly because Python2 is slated to go away (though, in the open source world, that doesn’t mean a whole lot!) but also because it is a better language. \u003c/span\u003e\u003cspan style=\"font-weight: 400;\"\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003ch1\u003e \u003c/h1\u003e\n\u003ch1\u003e\n\u003cspan style=\"font-weight: 400;\"\u003eCourse topics\u003c/span\u003e\u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e\n\u003c/h1\u003e\n\u003col\u003e\n\u003col\u003e\n\u003cli\u003e\n\u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e \u003cspan style=\"font-weight: 400;\"\u003ePython review\u003c/span\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e \u003cspan style=\"font-weight: 400;\"\u003eNumpy and pandas\u003c/span\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cspan style=\"font-weight: 400;\"\u003e \u003c/span\u003e \u003cspan style=\"font-weight: 400;\"\u003eData analysis and visualization\u003c/span\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e \u003cspan style=\"font-weight: 400;\"\u003eText mining\u003c/span\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e \u003cspan style=\"font-weight: 400;\"\u003eAnalysis of networks\u003c/span\u003e\n\u003c/li\u003e\n\u003cli\u003eMachine learning (regression, decision trees, clustering,deep learning)\u003c/li\u003e\n\u003c/ol\u003e\n\u003c/ol\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e \u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\n\u003cspan style=\"font-weight: 400;\"\u003eTexts\u003c/span\u003e\u003cspan style=\"font-weight: 400;\"\u003e\u003c/span\u003e\n\u003c/h2\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003eThere is no required text for this class. The following will be helpful if you want to go above and beyond the material covered in the course: \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003e \u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cul\u003e\n\u003cli style=\"font-weight: 400;\"\u003e\n\u003ci\u003e\u003cspan style=\"font-weight: 400;\"\u003eLearning Python, 5th Edition Powerful Object-Oriented Programming\u003c/span\u003e\u003c/i\u003e\u003cspan style=\"font-weight: 400;\"\u003e, Mark Lutz. O'Reilly Media, 2013.\u003c/span\u003e\n\u003c/li\u003e\n\u003cli style=\"font-weight: 400;\"\u003e\n\u003ci\u003e\u003cspan style=\"font-weight: 400;\"\u003eWeb Scraping with Python: Collecting Data from the Modern Web\u003c/span\u003e\u003c/i\u003e\u003cspan style=\"font-weight: 400;\"\u003e by Ryan Mitchell. O’Reilly Media July 2015. ISBN: 978-1491910290\u003c/span\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003ci\u003e\u003c/i\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli style=\"font-weight: 400;\"\u003e\u003ci\u003e\u003cspan style=\"font-weight: 400;\"\u003ePython for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython\u003c/span\u003e\u003cspan style=\"font-weight: 400;\"\u003e by Wes McKinney. O’Reilly Media (\u003cspan\u003e2017). ISBN:978-1491957660\u003c/span\u003e\u003c/span\u003e\u003c/i\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400;\"\u003e \u003c/span\u003e\u003c/p\u003e\n\u003ch2\u003e\u003cspan style=\"font-weight: 400;\"\u003eOnline resources\u003c/span\u003e\u003c/h2\u003e\n\u003cp\u003e\u003cspan\u003ePython documentation: \u003ca href=\"http://docs.python.org/3.6/index.html\"\u003ehttp://docs.python.org/3.6/index.html\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003ePython tutorial: \u003c/span\u003e\u003ca href=\"https://docs.python.org/3.6/tutorial/\"\u003e\u003cspan\u003ehttps://docs.python.org/3.6/tutorial/\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003ePython Regular Expressions \u003ca href=\"https://docs.python.org/3.6/library/re.html\"\u003ehttps://docs.python.org/3.6/library/re.html\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003e\u003c/span\u003e\u003cspan\u003eBeautifulSoup: \u003c/span\u003e\u003ca href=\"http://www.crummy.com/software/BeautifulSoup/bs4/doc/\"\u003e\u003cspan\u003ehttp://www.crummy.com/software/BeautifulSoup/bs4/doc/\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003ePandas: \u003c/span\u003e\u003ca href=\"http://pandas.pydata.org/pandas-docs/stable/\"\u003e\u003cspan\u003ehttp://pandas.pydata.org/pandas-docs/stable/\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003eNLTK: \u003c/span\u003e\u003ca href=\"http://www.nltk.org/\"\u003e\u003cspan\u003ehttp://www.nltk.org/\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003eBig Data \u003c/span\u003e\u003ca href=\"http://www.mmds.org/\"\u003e\u003cspan\u003ehttp://www.mmds.org/\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003eSQL: \u003ca href=\"http://www.w3schools.com/sql/\"\u003ehttp://www.w3schools.com/sql/\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003eMySQL: \u003c/span\u003e\u003ca href=\"http://www.plumcreek.us/mysql/\"\u003e\u003cspan\u003ehttp://www.plumcreek.us/mysql/\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e","notices":[],"active_context_tab":"syllabus"};
+</script>
+
+
+<script src="./IEORE4523_001_2019_3 - DATA ANALYTICS_files/columbia(1).js" defer="defer"></script>
+
+</div> <!-- #application -->
+
+
+<div id="nav-tray-portal" style="position: relative; z-index: 99;"></div><div class="tinymce-a11y-checker-container"></div><div id="ek-overlay" style="display: none;"></div><div id="ek-modal" role="dialog" tabindex="-1" aria-live="assertive" aria-labelledby="ek-modal-header" style="display: none;"><div class="ek-modal-content"><h2 class="ek-modal-header" id="ek-modal-header"></h2><a id="ek-modal-close"></a><div class="ek-modal-body" id="ek-modal-body"></div><div class="ek-modal-footer"></div></div></div></body></html>
